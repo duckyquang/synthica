@@ -2331,10 +2331,11 @@ body {
 
 /* Page-specific Styles for About, Programs, Competition, Work With Us */
 
-/* Page Navbar - Fixed Position */
+/* Page Navbar - Inside Hero */
 .page-navbar {
     margin: 0 auto;
     padding-top: 2vh;
+    margin-bottom: 0;
 }
 
 /* Page Hero Section */
@@ -2345,7 +2346,7 @@ body {
         #69aaec 35%, 
         #99ccff 65%, 
         #ffffff 100%);
-    padding: 5rem 2rem 6rem;
+    padding: 0 2rem 6rem;
     text-align: center;
     margin-top: 0;
 }
@@ -2353,6 +2354,7 @@ body {
 .page-hero-content {
     max-width: 900px;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 
 .page-hero-title {
@@ -3736,7 +3738,11 @@ body {
 
 @media (max-width: 640px) {
     .page-hero {
-        padding: 4rem 1.5rem 4rem;
+        padding: 0 1.5rem 4rem;
+    }
+    
+    .page-hero-content {
+        padding-top: 3rem;
     }
 
     .page-hero-title {
