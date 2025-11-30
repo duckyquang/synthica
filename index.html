@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header" id="header">
+    <div class="header" id="home">
         <nav class="navbar">
-            <div class="logo">
+            <a href="#home" class="logo">
                 <img src="src/logo/Synthica Logo.png" alt="Synthica Logo" class="logo-icon">
                 <span class="logo-text">Synthica</span>
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -357,7 +357,7 @@
 
     <script>
         // Meteor effect
-        const header = document.getElementById('header');
+        const header = document.getElementById('home');
         let groupActive = false;
         const tailLengths = [100, 150, 200]; // Different tail lengths for variety
         let activeMeteorPositions = [];
