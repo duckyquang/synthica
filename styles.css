@@ -2333,8 +2333,8 @@ body {
 
 /* Page Navbar - Fixed Position */
 .page-navbar {
-    margin: 2vh auto 0;
-    margin-bottom: 0;
+    margin: 0 auto;
+    padding-top: 2vh;
 }
 
 /* Page Hero Section */
