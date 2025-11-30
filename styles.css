@@ -77,6 +77,14 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
@@ -1432,11 +1440,13 @@ body {
         flex-wrap: nowrap;
         gap: 0.5rem;
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
         font-size: 1rem;
         white-space: nowrap;
+        flex-shrink: 0;
     }
 
     .logo-icon {
@@ -1453,14 +1463,29 @@ body {
 
     .nav-links {
         display: flex;
-        gap: 0.5rem;
+        gap: 0.4rem;
         flex-wrap: nowrap;
         justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links li {
+        flex-shrink: 0;
     }
 
     .nav-links a {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         white-space: nowrap;
+        padding: 0.25rem 0.4rem;
     }
 
     .dropdown-menu {
@@ -1835,11 +1860,21 @@ body {
     }
 
     .nav-links {
-        gap: 0.3rem;
+        gap: 0.25rem;
     }
 
     .nav-links a {
+        font-size: 0.55rem;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .dropdown-menu {
+        min-width: 140px;
+    }
+
+    .dropdown-menu a {
         font-size: 0.6rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .step:not(:last-child) .step-number::after {
