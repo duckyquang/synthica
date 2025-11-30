@@ -2334,7 +2334,6 @@ body {
 /* Page Navbar - Inside Hero */
 .page-navbar {
     margin: 0 auto;
-    padding-top: 2vh;
     margin-bottom: 0;
 }
 
@@ -2346,7 +2345,7 @@ body {
         #69aaec 35%, 
         #99ccff 65%, 
         #ffffff 100%);
-    padding: 0 2rem 6rem;
+    padding: 2vh 2rem 6rem;
     text-align: center;
     margin-top: 0;
 }
@@ -3738,7 +3737,7 @@ body {
 
 @media (max-width: 640px) {
     .page-hero {
-        padding: 0 1.5rem 4rem;
+        padding: 2vh 1.5rem 4rem;
     }
     
     .page-hero-content {
