@@ -1167,6 +1167,7 @@ body {
     color: #0F172A;
     text-align: center;
     margin-bottom: 1rem;
+    font-family: 'Garet', sans-serif;
 }
 
 .faq-subtitle {
@@ -1174,6 +1175,7 @@ body {
     color: #64748B;
     text-align: center;
     margin-bottom: 4rem;
+    font-family: 'Garet', sans-serif;
 }
 
 .faq-list {
@@ -1208,6 +1210,7 @@ body {
     color: #0F172A;
     text-align: left;
     transition: background 0.3s;
+    font-family: 'Garet', sans-serif;
 }
 
 .faq-question:hover {
@@ -1247,6 +1250,7 @@ body {
     color: #64748B;
     line-height: 1.6;
     margin: 0;
+    font-family: 'Garet', sans-serif;
 }
 
 /* Footer Links Grid */
