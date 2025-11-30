@@ -2334,6 +2334,7 @@ body {
 /* Page Navbar - Fixed Position */
 .page-navbar {
     margin: 2vh auto 0;
+    margin-bottom: 0;
 }
 
 /* Page Hero Section */
@@ -2344,8 +2345,9 @@ body {
         #69aaec 35%, 
         #99ccff 65%, 
         #ffffff 100%);
-    padding: 8rem 2rem 6rem;
+    padding: 5rem 2rem 6rem;
     text-align: center;
+    margin-top: 0;
 }
 
 .page-hero-content {
@@ -3734,7 +3736,7 @@ body {
 
 @media (max-width: 640px) {
     .page-hero {
-        padding: 6rem 1.5rem 4rem;
+        padding: 4rem 1.5rem 4rem;
     }
 
     .page-hero-title {
