@@ -152,6 +152,7 @@ body {
     font-weight: 500;
     transition: all 0.3s;
     text-shadow: none;
+    text-align: left;
 }
 
 .dropdown-menu a:hover {
@@ -1530,6 +1531,7 @@ body {
     .dropdown-menu a {
         padding: 0.5rem 1rem;
         font-size: 0.7rem;
+        text-align: left;
     }
 
     .join-btn {
@@ -1904,6 +1906,7 @@ body {
     .dropdown-menu a {
         font-size: 0.65rem;
         padding: 0.4rem 0.8rem;
+        text-align: left;
     }
 
     .step:not(:last-child) .step-number::after {
@@ -1951,6 +1954,7 @@ body {
 
     .dropdown-menu a {
         font-size: 0.85rem;
+        text-align: left;
     }
 
     .join-btn {
@@ -2162,6 +2166,7 @@ body {
 
     .dropdown-menu a {
         font-size: 0.92rem;
+        text-align: left;
     }
 
     .join-btn {
@@ -2264,6 +2269,7 @@ body {
 
     .dropdown-menu a {
         font-size: 0.97rem;
+        text-align: left;
     }
 
     .join-btn {
