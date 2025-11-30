@@ -1441,6 +1441,7 @@ body {
         gap: 0.5rem;
         justify-content: space-between;
         align-items: center;
+        overflow: visible;
     }
 
     .logo {
@@ -1469,6 +1470,7 @@ body {
         align-items: center;
         flex: 1;
         overflow-x: auto;
+        overflow-y: visible;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -1482,6 +1484,10 @@ body {
         flex-shrink: 0;
     }
 
+    .nav-item-dropdown {
+        position: relative;
+    }
+
     .nav-links a {
         font-size: 0.65rem;
         white-space: nowrap;
@@ -1489,14 +1495,24 @@ body {
     }
 
     .dropdown-menu {
-        min-width: 160px;
-        font-size: 0.7rem;
-        left: 50%;
-        transform: translateX(-50%) translateY(-10px);
+        position: fixed;
+        min-width: 200px;
+        max-width: 90vw;
+        font-size: 0.75rem;
+        left: 5vw;
+        right: 5vw;
+        width: auto;
+        transform: translateY(-10px);
+        top: 70px;
+        margin-top: 0;
+        z-index: 10000;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+        max-height: 60vh;
+        overflow-y: auto;
     }
 
     .nav-item-dropdown.active .dropdown-menu {
-        transform: translateX(-50%) translateY(0);
+        transform: translateY(0);
     }
 
     .dropdown-menu a {
@@ -1869,11 +1885,12 @@ body {
     }
 
     .dropdown-menu {
-        min-width: 140px;
+        top: 65px;
+        font-size: 0.7rem;
     }
 
     .dropdown-menu a {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         padding: 0.4rem 0.8rem;
     }
 
