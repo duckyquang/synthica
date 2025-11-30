@@ -32,10 +32,37 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#competition">Competition</a></li>
-                <li><a href="#work">Work with us</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#about" class="nav-link-dropdown">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item-dropdown">
+                    <a href="#programs" class="nav-link-dropdown">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#events">School-size Events</a></li>
+                        <li><a href="#seminars">Seminars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item-dropdown">
+                    <a href="#competition" class="nav-link-dropdown">Competition</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#regional">Regional Round</a></li>
+                        <li><a href="#international">International Round</a></li>
+                        <li><a href="#rubric">Rubric</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item-dropdown">
+                    <a href="#work" class="nav-link-dropdown">Work with us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#ambassador">School Ambassador</a></li>
+                        <li><a href="#partnerships">Partnerships</a></li>
+                    </ul>
+                </li>
             </ul>
             <button class="join-btn">Join Us Now</button>
         </nav>
@@ -587,6 +614,42 @@
                     item.classList.add('active');
                 }
             });
+        });
+
+        // Dropdown Menu Functionality
+        const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+        
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav-link-dropdown');
+            
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                const isActive = item.classList.contains('active');
+                
+                // Close all other dropdowns
+                dropdownItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current dropdown
+                if (isActive) {
+                    item.classList.remove('active');
+                } else {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-item-dropdown')) {
+                dropdownItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
         });
     </script>
 </body>
