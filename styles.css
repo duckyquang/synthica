@@ -1240,8 +1240,7 @@ body {
 .faq-section {
     background: linear-gradient(180deg, 
         #ffffff 0%, 
-        #F9FAFB 50%, 
-        #F4F5F7 100%);
+        #ffffff 100%);
     padding: 6rem 2rem;
 }
 
@@ -2516,8 +2515,8 @@ body {
     padding: 6rem 2rem;
     background: linear-gradient(180deg, 
         #F9FAFB 0%, 
-        #F4F5F7 50%, 
-        #ECEEF1 100%);
+        #FAFBFC 50%, 
+        #ffffff 100%);
 }
 
 .team-container {
@@ -2927,8 +2926,8 @@ body {
     padding: 6rem 2rem;
     background: linear-gradient(180deg, 
         #F9FAFB 0%, 
-        #F4F5F7 50%, 
-        #ECEEF1 100%);
+        #FAFBFC 50%, 
+        #ffffff 100%);
 }
 
 .seminars-container {
@@ -3371,8 +3370,8 @@ body {
     padding: 6rem 2rem;
     background: linear-gradient(180deg, 
         #F9FAFB 0%, 
-        #F4F5F7 50%, 
-        #ECEEF1 100%);
+        #FAFBFC 50%, 
+        #ffffff 100%);
 }
 
 .rubric-container {
@@ -3457,8 +3456,7 @@ body {
 .partnerships-section {
     background: linear-gradient(180deg, 
         #ffffff 0%, 
-        #F9FAFB 50%, 
-        #F4F5F7 100%);
+        #ffffff 100%);
 }
 
 .ambassador-container, .partnerships-container {
