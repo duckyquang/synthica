@@ -2399,6 +2399,7 @@ body {
     font-weight: 600;
     margin-bottom: 1.5rem;
     border: 1px solid rgba(120, 180, 251, 0.3);
+    text-align: center;
 }
 
 .section-title {
@@ -2407,6 +2408,7 @@ body {
     color: #1F2937;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    text-align: center;
 }
 
 .section-subtitle {
@@ -2415,6 +2417,7 @@ body {
     max-width: 800px;
     margin: 0 auto 3rem;
     line-height: 1.6;
+    text-align: center;
 }
 
 .section-text {
@@ -2422,6 +2425,10 @@ body {
     color: #6B7280;
     line-height: 1.8;
     margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Mission Section */
