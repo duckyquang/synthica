@@ -617,7 +617,7 @@ body {
 .mini-preview {
     width: 102.5%;
     height: auto;
-    padding: 0;
+    padding: 1rem;
     border-radius: 24px;
     background: linear-gradient(180deg, 
         #2589ed 0%, 
@@ -691,8 +691,14 @@ body {
 }
 
 /* Curriculum Card Styles */
-.curriculum-card {
+.mini-preview.curriculum-card {
     padding: 1rem;
+    background: linear-gradient(180deg, 
+        #2589ed 0%, 
+        #4999e8 5%, 
+        #69aaec 35%, 
+        #99ccff 65%, 
+        #ffffff 100%);
 }
 
 .curriculum-header {
