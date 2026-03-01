@@ -44,6 +44,7 @@
                 <li class="nav-item-dropdown">
                     <a href="programs.html" class="nav-link-dropdown">Programs</a>
                     <ul class="dropdown-menu">
+                        <li><a href="#research-group">Research Group</a></li>
                         <li><a href="#curriculum">Curriculum</a></li>
                         <li><a href="#events">School-size Events</a></li>
                         <li><a href="#seminars">Seminars</a></li>
@@ -72,6 +73,72 @@
         <div class="page-hero-content">
             <h1 class="page-hero-title">Our <span class="highlight-text">Programs</span></h1>
             <p class="page-hero-subtitle">Comprehensive research education designed to transform high school students into confident researchers.</p>
+        </div>
+    </section>
+
+    <!-- Research Group Section -->
+    <section class="research-group-section" id="research-group">
+        <div class="research-group-container">
+            <div class="section-badge">Research Group</div>
+            <h2 class="section-title">1-on-1 Mentorship with <span class="highlight-blue">Top Researchers</span></h2>
+            <p class="section-text">A competitive program connecting high school students with mentors who conducted groundbreaking research at top universities during their high school years.</p>
+            
+            <div class="research-group-content">
+                <div class="research-group-main-card">
+                    <div class="research-group-header">
+                        <div class="research-group-icon">🔬</div>
+                        <div class="research-group-header-text">
+                            <h3 class="research-group-title">What is Research Group?</h3>
+                            <p class="research-group-subtitle">Exclusive mentorship program for ambitious researchers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="research-group-features">
+                        <div class="research-group-feature">
+                            <div class="feature-icon">🎓</div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Elite Mentors</h4>
+                                <p class="feature-desc">Get paired with mentors who conducted research at MIT, Stanford, and CalTech as high school students</p>
+                            </div>
+                        </div>
+                        
+                        <div class="research-group-feature">
+                            <div class="feature-icon">🤝</div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">1-on-1 Guidance</h4>
+                                <p class="feature-desc">Receive personalized mentorship tailored to your research interests and goals</p>
+                            </div>
+                        </div>
+                        
+                        <div class="research-group-feature">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Competitive Program</h4>
+                                <p class="feature-desc">Join a selective cohort of dedicated student researchers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-group-status">
+                    <div class="status-card closed-status">
+                        <div class="status-header">
+                            <div class="status-icon">❌</div>
+                            <h4 class="status-title">Spring 2026 (Sp26)</h4>
+                        </div>
+                        <p class="status-text">Applications are currently closed</p>
+                    </div>
+                    
+                    <div class="status-card upcoming-status">
+                        <div class="status-header">
+                            <div class="status-icon">⏳</div>
+                            <h4 class="status-title">Summer 2026 (S26)</h4>
+                        </div>
+                        <p class="status-text">Application opens soon</p>
+                        <div class="status-badge">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -362,7 +429,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.curriculum-card, .event-card, .seminar-type-card, .seminar-item').forEach(card => {
+        document.querySelectorAll('.curriculum-card, .event-card, .seminar-type-card, .seminar-item, .research-group-main-card, .status-card, .research-group-feature').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'all 0.6s ease';
