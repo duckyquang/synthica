@@ -284,6 +284,36 @@
         // Dropdown Menu Functionality - Show on hover, allow navigation on click
         const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
         
+        // Handle hover with delay to prevent dropdown from closing when moving mouse
+        let hoverTimeout;
+        dropdownItems.forEach(item => {
+            const dropdown = item.querySelector('.dropdown-menu');
+            
+            item.addEventListener('mouseenter', () => {
+                clearTimeout(hoverTimeout);
+                item.classList.add('active');
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                hoverTimeout = setTimeout(() => {
+                    item.classList.remove('active');
+                }, 150); // Small delay to allow mouse movement
+            });
+            
+            if (dropdown) {
+                dropdown.addEventListener('mouseenter', () => {
+                    clearTimeout(hoverTimeout);
+                    item.classList.add('active');
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    hoverTimeout = setTimeout(() => {
+                        item.classList.remove('active');
+                    }, 150);
+                });
+            }
+        });
+        
         // Close dropdowns when clicking outside (for mobile/accessibility)
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.nav-item-dropdown')) {
