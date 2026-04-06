@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+/* SEO Hidden Content - Invisible but readable by search engines */
+.seo-hidden-content {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -224,6 +235,30 @@ body {
     position: relative;
 }
 
+.hero-announcement-card {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    box-shadow: 0 4px 20px rgba(0, 61, 130, 0.15);
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-announcement-card:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0, 61, 130, 0.22);
+}
+
 .hero-content h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -319,6 +354,8 @@ body {
     padding: 0 0 6rem;
     background: transparent;
     overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .colleges-heading {
@@ -333,20 +370,23 @@ body {
 .colleges-scroller {
     overflow: hidden;
     position: relative;
-    width: 80vw;
+    width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
+    padding: 0 10vw;
+    box-sizing: border-box;
     -webkit-mask-image: linear-gradient(
         to right,
         transparent 0%,
-        black 10%,
-        black 90%,
+        black 8%,
+        black 92%,
         transparent 100%
     );
     mask-image: linear-gradient(
         to right,
         transparent 0%,
-        black 10%,
-        black 90%,
+        black 8%,
+        black 92%,
         transparent 100%
     );
 }
@@ -356,6 +396,7 @@ body {
     gap: 4rem;
     animation: scroll 50s linear infinite;
     width: fit-content;
+    will-change: transform;
 }
 
 .colleges-track:hover {
@@ -382,7 +423,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-50% - 2rem));
     }
 }
 
@@ -732,7 +773,7 @@ body {
 }
 
 .mini-preview.curriculum-card .curriculum-icon {
-    font-size: 2rem;
+    font-size: 0;
     background: white;
     width: 52px;
     height: 52px;
@@ -740,6 +781,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.mini-preview.curriculum-card .curriculum-icon .icon-svg-inline {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .mini-preview.curriculum-card .curriculum-divider {
@@ -1525,6 +1571,12 @@ body {
         padding: 8vh 1.5rem 5vh;
     }
 
+    .hero-announcement-card {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.85rem;
+        margin-bottom: 1rem;
+    }
+
     .hero-cta-btn {
         margin-bottom: 5vh;
     }
@@ -1553,7 +1605,8 @@ body {
     }
 
     .colleges-scroller {
-        width: 95vw;
+        width: 100%;
+        padding: 0 2.5vw;
     }
 
     .college-logo {
@@ -1955,7 +2008,8 @@ body {
     }
 
     .colleges-scroller {
-        width: 90vw;
+        width: 100%;
+        padding: 0 5vw;
     }
 
     .college-logo {
@@ -3088,9 +3142,12 @@ body {
 }
 
 .research-group-icon {
-    font-size: 4rem;
+    font-size: 0;
     width: 80px;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3140,8 +3197,11 @@ body {
 }
 
 .research-group-feature .feature-icon {
-    font-size: 2.5rem;
+    font-size: 0;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .research-group-feature .feature-content {
@@ -3163,8 +3223,9 @@ body {
 }
 
 .research-group-status {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -3226,7 +3287,10 @@ body {
 }
 
 .status-icon {
-    font-size: 2.5rem;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .status-title {
@@ -3325,9 +3389,12 @@ body {
 }
 
 .curriculum-card.locked-module .lock-icon {
-    font-size: 3rem;
+    font-size: 0;
     margin-bottom: 1rem;
     filter: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 1 !important;
     z-index: 101;
     position: relative;
@@ -3351,8 +3418,11 @@ body {
 }
 
 .curriculum-icon {
-    font-size: 3rem;
+    font-size: 0;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .curriculum-number {
@@ -3397,6 +3467,9 @@ body {
     font-size: 0.875rem;
     color: #78b4fb;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .curriculum-cta {
@@ -4093,9 +4166,12 @@ body {
 }
 
 .prize-medal {
-    font-size: 4rem;
+    font-size: 0;
     margin-bottom: 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .prize-icon {
@@ -4497,8 +4573,11 @@ body {
 }
 
 .benefit-icon-large {
-    font-size: 3.5rem;
+    font-size: 0;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .benefit-title-large {
@@ -4540,8 +4619,11 @@ body {
 }
 
 .partnership-type-icon {
-    font-size: 3rem;
+    font-size: 0;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .partnership-type-title {
@@ -4597,8 +4679,11 @@ body {
 }
 
 .sponsor-benefit-icon {
-    font-size: 3rem;
+    font-size: 0;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponsor-benefit-title {
@@ -4651,8 +4736,11 @@ body {
 }
 
 .return-icon {
-    font-size: 2rem;
+    font-size: 0;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sponsor-return-item p {
@@ -4921,7 +5009,7 @@ body {
     .research-group-icon {
         width: 60px;
         height: 60px;
-        font-size: 3rem;
+        font-size: 0;
     }
     
     .research-group-title {
@@ -5302,7 +5390,12 @@ body {
     }
 
     .prize-medal {
-        font-size: 2rem;
+        font-size: 0;
+    }
+    
+    .prize-medal .icon-svg {
+        width: 2rem;
+        height: 2rem;
     }
 
     .prize-rank {
