@@ -670,7 +670,8 @@ body {
 }
 
 .mini-preview {
-    width: 102.5%;
+    width: 100%;
+    margin: 1rem 0 -5% 0;
     height: auto;
     padding: 2rem;
     border-radius: 24px;
@@ -680,15 +681,9 @@ body {
         #69aaec 35%, 
         #99ccff 65%, 
         #ffffff 100%);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transform: rotateX(45deg) translateY(5%);
-    transition: transform 0.3s ease;
-    margin-bottom: -15%;
-}
-
-.mini-preview:hover {
-    transform: rotateX(5deg) translateY(15%);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+    transform: rotateX(25deg);
+    transform-origin: bottom center;
 }
 
 .mini-preview .preview-header {
@@ -773,7 +768,7 @@ body {
 }
 
 .mini-preview.curriculum-card .curriculum-icon {
-    font-size: 0;
+    font-size: 1.5rem;
     background: white;
     width: 52px;
     height: 52px;
