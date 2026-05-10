@@ -58,6 +58,12 @@
     <a class="journal-skip-link" href="#journal-main">Skip to main content</a>
 
     <section class="journal-hero">
+        <div class="journal-topline">
+            <span>Independent open-access STEM journal</span>
+            <span>Advancing student science</span>
+            <a href="mailto:editorial@synthicajournal.org">editorial@synthicajournal.org</a>
+        </div>
+
         <nav class="navbar journal-navbar" aria-label="Primary navigation">
             <a href="index.html" class="logo">
                 <img src="src/logo/Synthica Logo.png" alt="Synthica Logo" class="logo-icon">
@@ -88,6 +94,14 @@
                 class="join-btn">Submit</a>
         </nav>
 
+        <div class="journal-browse-bar" aria-label="Journal browsing shortcuts">
+            <a href="#current-issue">Current Issue</a>
+            <a href="#for-authors">For Authors</a>
+            <a href="#policies">Policies</a>
+            <a href="#workflow">Review Process</a>
+            <a href="#disciplines">Disciplines</a>
+        </div>
+
         <div class="journal-hero-grid">
             <div class="journal-hero-copy">
                 <div class="journal-kicker">Synthica Journal</div>
@@ -106,6 +120,14 @@
             </div>
 
             <aside class="journal-issue-panel" aria-label="Current issue summary">
+                <div class="journal-cover-card" aria-hidden="true">
+                    <span class="journal-cover-volume">Vol. 1 · Issue 1</span>
+                    <span class="journal-cover-title">Synthica</span>
+                    <span class="journal-cover-line"></span>
+                    <span class="journal-cover-subtitle">Student STEM Research</span>
+                    <span class="journal-cover-orbit journal-cover-orbit-1"></span>
+                    <span class="journal-cover-orbit journal-cover-orbit-2"></span>
+                </div>
                 <div class="journal-panel-label">Current Issue</div>
                 <h2>Volume 1, Issue 1</h2>
                 <p class="journal-panel-date">Pilot issue in preparation</p>
@@ -142,6 +164,9 @@
 
             <div class="journal-article-grid">
                 <article class="journal-article-card">
+                    <div class="journal-article-visual journal-visual-blue">
+                        <span>Original Research</span>
+                    </div>
                     <div class="journal-card-meta">
                         <span>Original Research</span>
                         <span>Coming soon</span>
@@ -153,6 +178,9 @@
                 </article>
 
                 <article class="journal-article-card">
+                    <div class="journal-article-visual journal-visual-green">
+                        <span>Review Article</span>
+                    </div>
                     <div class="journal-card-meta">
                         <span>Review Article</span>
                         <span>Coming soon</span>
@@ -164,6 +192,9 @@
                 </article>
 
                 <article class="journal-article-card">
+                    <div class="journal-article-visual journal-visual-gold">
+                        <span>Methods Paper</span>
+                    </div>
                     <div class="journal-card-meta">
                         <span>Methods Paper</span>
                         <span>Coming soon</span>
@@ -173,6 +204,22 @@
                     <p>Methods papers will emphasize reproducibility, data availability, clear figures, and machine-readable scholarly metadata.</p>
                     <span class="journal-open-access">Open Access</span>
                 </article>
+            </div>
+        </section>
+
+        <section class="journal-section journal-explore">
+            <div class="journal-explore-card journal-explore-primary">
+                <p class="journal-eyebrow">Browse</p>
+                <h2>Find research by issue, article type, or discipline.</h2>
+                <p>The journal archive is designed for simple HTML links and stable URLs so articles remain discoverable by readers, institutions, and scholarly crawlers.</p>
+            </div>
+            <div class="journal-search-card" role="search" aria-label="Journal search preview">
+                <label for="journal-search-preview">Search the journal</label>
+                <div class="journal-search-box">
+                    <input id="journal-search-preview" type="search" placeholder="Search articles, authors, topics..." disabled>
+                    <button type="button" disabled>Search</button>
+                </div>
+                <p>Search will activate when the article archive launches.</p>
             </div>
         </section>
 
@@ -222,6 +269,36 @@
             </div>
         </section>
 
+        <section class="journal-section journal-workflow" id="workflow">
+            <div class="journal-section-heading">
+                <p class="journal-eyebrow">Editorial process</p>
+                <h2>From submission to publication</h2>
+                <p>A transparent workflow helps first-time authors understand what happens after they submit a manuscript.</p>
+            </div>
+            <div class="journal-workflow-grid">
+                <div class="journal-workflow-step">
+                    <span>01</span>
+                    <h3>Desk Review</h3>
+                    <p>The editorial team checks scope, formatting, originality, and required ethics documents before peer review.</p>
+                </div>
+                <div class="journal-workflow-step">
+                    <span>02</span>
+                    <h3>Double-Blind Review</h3>
+                    <p>At least two reviewers evaluate methodology, clarity, references, and research contribution.</p>
+                </div>
+                <div class="journal-workflow-step">
+                    <span>03</span>
+                    <h3>Revision & Proofs</h3>
+                    <p>Authors respond to reviewer feedback, approve edited proofs, and finalize article metadata.</p>
+                </div>
+                <div class="journal-workflow-step">
+                    <span>04</span>
+                    <h3>Open Publication</h3>
+                    <p>Accepted work is published as HTML plus PDF with DOI-ready metadata and CC BY licensing.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="journal-section journal-policy-strip" id="policies">
             <div class="journal-section-heading">
                 <p class="journal-eyebrow">Editorial transparency</p>
@@ -248,7 +325,31 @@
             </div>
         </section>
 
-        <section class="journal-section journal-disciplines" aria-labelledby="journal-disciplines-title">
+        <section class="journal-section journal-board-teaser">
+            <div class="journal-section-heading">
+                <p class="journal-eyebrow">Editorial leadership</p>
+                <h2>Built around governance, review quality, and long-term credibility.</h2>
+            </div>
+            <div class="journal-board-grid">
+                <article>
+                    <span>Faculty Advisor</span>
+                    <h3>Oversight & ethics</h3>
+                    <p>Provides adult academic supervision for editorial standards, borderline decisions, and research safeguards.</p>
+                </article>
+                <article>
+                    <span>Editorial Chair</span>
+                    <h3>Peer review workflow</h3>
+                    <p>Coordinates desk review, reviewer assignment, decision letters, and publication scheduling.</p>
+                </article>
+                <article>
+                    <span>Technical Lead</span>
+                    <h3>Metadata & access</h3>
+                    <p>Maintains page structure, sitemap readiness, citation metadata, and accessible publishing templates.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="journal-section journal-disciplines" id="disciplines" aria-labelledby="journal-disciplines-title">
             <div>
                 <p class="journal-eyebrow">Disciplines</p>
                 <h2 id="journal-disciplines-title">STEM fields covered</h2>
