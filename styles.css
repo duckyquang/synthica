@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-/* Synthica Journal Page */
+/* Synthica Journal Page — DEPRECATED
+   Styles for journal.html have been moved to journal.css.
+   journal.html no longer loads styles.css.
+   The rules below are kept for reference only and have no effect.
+   ------------------------------------------------------------------ */
 .journal-page {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: #212121;

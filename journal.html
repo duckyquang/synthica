@@ -4,29 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthica Journal - Open-Access STEM Research by Student Researchers</title>
+    <title>Synthica Journal — Advancing Student Science</title>
     <meta name="description"
-        content="Synthica Journal is an independent, open-access, peer-reviewed STEM journal for student researchers. Discover issues, submission guidance, editorial standards, and publication policies.">
+        content="Synthica Journal is an independent, open-access, peer-reviewed STEM journal for high school student researchers. We publish original research, reviews, and methods papers with professional editorial standards.">
     <meta name="keywords"
-        content="Synthica Journal, student research journal, high school research journal, open access STEM journal, peer-reviewed student research, research publication, STEM manuscript submission">
-    <meta name="author" content="Synthica">
+        content="Synthica Journal, student research journal, open access STEM journal, peer-reviewed student research, high school science journal, research publication">
+    <meta name="author" content="Synthica Journal">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="language" content="English">
     <link rel="canonical" href="https://www.synthica.org/journal">
 
-    <meta property="og:title" content="Synthica Journal - Advancing Student Science">
+    <meta property="og:title" content="Synthica Journal — Advancing Student Science">
     <meta property="og:description"
-        content="An open-access, peer-reviewed STEM journal built for student researchers, rigorous editorial standards, and discoverable scholarly publishing.">
+        content="An independent, open-access, peer-reviewed STEM journal for student researchers. Professional editorial standards, zero fees.">
     <meta property="og:image" content="https://www.synthica.org/src/logo/Synthica Preview Image.png">
     <meta property="og:url" content="https://www.synthica.org/journal">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Synthica">
+    <meta property="og:site_name" content="Synthica Journal">
     <meta property="og:locale" content="en_US">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Synthica Journal - Advancing Student Science">
-    <meta name="twitter:description"
-        content="An open-access, peer-reviewed STEM journal for student researchers.">
+    <meta name="twitter:title" content="Synthica Journal — Advancing Student Science">
+    <meta name="twitter:description" content="Open-access, peer-reviewed STEM journal for student researchers.">
     <meta name="twitter:image" content="https://www.synthica.org/src/logo/Synthica Preview Image.png">
 
     <script type="application/ld+json">
@@ -34,14 +32,9 @@
         "@context": "https://schema.org",
         "@type": "Periodical",
         "name": "Synthica Journal",
-        "alternateName": "Synthica",
         "url": "https://www.synthica.org/journal",
-        "description": "Independent open-access, peer-reviewed STEM research journal for student researchers.",
-        "publisher": {
-            "@type": "EducationalOrganization",
-            "name": "Synthica",
-            "url": "https://www.synthica.org"
-        },
+        "description": "Independent open-access, peer-reviewed STEM journal for student researchers.",
+        "publisher": { "@type": "EducationalOrganization", "name": "Synthica", "url": "https://www.synthica.org" },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "isAccessibleForFree": true
     }
@@ -49,348 +42,616 @@
 
     <link rel="icon" type="image/png" href="src/logo/Synthica Favicon.png">
     <link rel="sitemap" type="application/xml" href="sitemap.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="journal.css">
 </head>
 
-<body class="journal-page">
-    <a class="journal-skip-link" href="#journal-main">Skip to main content</a>
+<body>
+    <a class="jskip" href="#jmain">Skip to main content</a>
 
-    <section class="journal-hero">
-        <div class="journal-topline">
-            <span>Independent open-access STEM journal</span>
-            <span>Advancing student science</span>
-            <a href="mailto:editorial@synthicajournal.org">editorial@synthicajournal.org</a>
-        </div>
+    <!-- Announcement bar -->
+    <div class="j-announce">
+        <p>Submissions are now open for Volume 1, Issue 1 &mdash;
+            <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Manuscript%20Submission">Submit your manuscript →</a>
+        </p>
+    </div>
 
-        <nav class="navbar journal-navbar" aria-label="Primary navigation">
-            <a href="index.html" class="logo">
-                <img src="src/logo/Synthica Logo.png" alt="Synthica Logo" class="logo-icon">
-                <span class="logo-text">Synthica</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li class="nav-item-dropdown">
-                    <a href="about.html" class="nav-link-dropdown">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html#mission">Our Mission</a></li>
-                        <li><a href="about.html#team">Our Team</a></li>
-                    </ul>
-                </li>
-                <li><a href="journal.html">Journal</a></li>
-                <li>
-                    <a href="https://globalresearchchallenge.org" target="_blank"
-                        rel="noopener noreferrer">Competition</a>
-                </li>
-                <li class="nav-item-dropdown">
-                    <a href="work-with-us.html" class="nav-link-dropdown">Work with us</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="work-with-us.html#partnerships">Partnerships</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Submission%20Inquiry"
-                class="join-btn">Submit</a>
-        </nav>
-
-        <div class="journal-browse-bar" aria-label="Journal browsing shortcuts">
-            <a href="#current-issue">Current Issue</a>
-            <a href="#for-authors">For Authors</a>
-            <a href="#policies">Policies</a>
-            <a href="#workflow">Review Process</a>
-            <a href="#disciplines">Disciplines</a>
-        </div>
-
-        <div class="journal-hero-grid">
-            <div class="journal-hero-copy">
-                <div class="journal-kicker">Synthica Journal</div>
-                <h1>Advancing student science.</h1>
-                <p>Synthica Journal is an independent, open-access, peer-reviewed STEM journal for student researchers. We publish original research, reviews, methods papers, and perspectives with a professional editorial standard modeled on leading scientific publishers.</p>
-                <div class="journal-hero-actions" aria-label="Journal quick actions">
-                    <a href="#current-issue" class="journal-primary-button">View Current Issue</a>
-                    <a href="#for-authors" class="journal-secondary-button">Submit Your Research</a>
+    <!-- Journal-only header (logo → synthica.org, no main site nav) -->
+    <header class="j-header" id="j-top">
+        <div class="j-header-inner">
+            <a href="index.html" class="j-logo" aria-label="Return to Synthica home">
+                <img src="src/logo/Synthica Logo.png" alt="" class="j-logo-img">
+                <div class="j-logo-text">
+                    <span class="j-logo-name">Synthica</span>
+                    <span class="j-logo-sub">Journal</span>
                 </div>
-                <div class="journal-trust-row" aria-label="Journal publishing signals">
-                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer"
-                        class="journal-oa-badge">Open access · CC BY 4.0</a>
-                    <span>ISSN pending</span>
-                    <span>Double-blind peer review</span>
+            </a>
+
+            <nav aria-label="Journal navigation">
+                <ul class="j-nav">
+                    <li class="j-nav-item">
+                        <button class="j-nav-btn" aria-expanded="false" aria-haspopup="true">Browse</button>
+                        <ul class="j-dropdown" role="menu">
+                            <li><a href="#current-issue" role="menuitem">Current Issue</a></li>
+                            <li><a href="#" role="menuitem">All Issues</a></li>
+                            <li><a href="#" role="menuitem">Article Archive</a></li>
+                            <li><a href="#" role="menuitem">Search Articles</a></li>
+                        </ul>
+                    </li>
+                    <li class="j-nav-item">
+                        <button class="j-nav-btn" aria-expanded="false" aria-haspopup="true">For Authors</button>
+                        <ul class="j-dropdown" role="menu">
+                            <li><a href="#for-authors" role="menuitem">Submission Guidelines</a></li>
+                            <li><a href="#" role="menuitem">Article Types</a></li>
+                            <li><a href="#" role="menuitem">Formatting Guide</a></li>
+                            <li><a href="#" role="menuitem">Author FAQ</a></li>
+                            <li><a href="#" role="menuitem">Author Declaration Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="j-nav-item">
+                        <button class="j-nav-btn" aria-expanded="false" aria-haspopup="true">Policies</button>
+                        <ul class="j-dropdown" role="menu">
+                            <li><a href="#policies" role="menuitem">Policies Overview</a></li>
+                            <li><a href="#" role="menuitem">Peer Review Policy</a></li>
+                            <li><a href="#" role="menuitem">Open Access & Licensing</a></li>
+                            <li><a href="#" role="menuitem">Publication Ethics</a></li>
+                            <li><a href="#" role="menuitem">AI Use & Disclosure</a></li>
+                            <li><a href="#" role="menuitem">Authorship & CRediT</a></li>
+                            <li><a href="#" role="menuitem">Human Subjects Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="j-nav-item">
+                        <button class="j-nav-btn" aria-expanded="false" aria-haspopup="true">About</button>
+                        <ul class="j-dropdown" role="menu">
+                            <li><a href="#about" role="menuitem">About the Journal</a></li>
+                            <li><a href="#team" role="menuitem">Editorial Team</a></li>
+                            <li><a href="#" role="menuitem">Advisory Board</a></li>
+                            <li><a href="#" role="menuitem">Aims &amp; Scope</a></li>
+                            <li><a href="index.html" role="menuitem">← Synthica.org</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Manuscript%20Submission"
+                class="j-submit-btn">Submit Manuscript</a>
+        </div>
+    </header>
+
+    <!-- Hero — same blue gradient as main Synthica site -->
+    <section class="j-hero">
+        <div class="j-hero-inner">
+            <div class="j-hero-left">
+                <div class="j-badge-pill">Open-Access · Peer-Reviewed · Student STEM</div>
+                <h1 class="j-hero-h1">Advancing <span class="j-hl">student</span> science.</h1>
+                <p class="j-hero-desc">Synthica Journal is an independent, open-access, peer-reviewed STEM journal for
+                    student researchers. We publish original research with the rigor of professional scholarly
+                    publishing — accessible to all, at no cost.</p>
+                <div class="j-hero-btns">
+                    <a href="#current-issue" class="j-btn-primary">View Current Issue</a>
+                    <a href="mailto:editorial@synthicajournal.org" class="j-btn-secondary">Submit Research</a>
+                </div>
+                <div class="j-trust-row">
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener"
+                        class="j-trust-green">Open Access · CC BY 4.0</a>
+                    <span class="j-trust-plain">Double-blind peer review</span>
+                    <span class="j-trust-plain">ISSN pending</span>
+                    <span class="j-trust-plain">IEEE ethics aligned</span>
                 </div>
             </div>
 
-            <aside class="journal-issue-panel" aria-label="Current issue summary">
-                <div class="journal-cover-card" aria-hidden="true">
-                    <span class="journal-cover-volume">Vol. 1 · Issue 1</span>
-                    <span class="journal-cover-title">Synthica</span>
-                    <span class="journal-cover-line"></span>
-                    <span class="journal-cover-subtitle">Student STEM Research</span>
-                    <span class="journal-cover-orbit journal-cover-orbit-1"></span>
-                    <span class="journal-cover-orbit journal-cover-orbit-2"></span>
+            <aside class="j-hero-right" aria-label="Current issue summary">
+                <!-- Stylised issue cover -->
+                <div class="j-cover" aria-hidden="true">
+                    <span class="j-cover-vol">Vol. 1 · Issue 1 · 2026</span>
+                    <div class="j-cover-title">Synthica</div>
+                    <div class="j-cover-rule"></div>
+                    <span class="j-cover-sub">Student STEM Research</span>
+                    <div class="j-cover-deco1"></div>
+                    <div class="j-cover-deco2"></div>
                 </div>
-                <div class="journal-panel-label">Current Issue</div>
-                <h2>Volume 1, Issue 1</h2>
-                <p class="journal-panel-date">Pilot issue in preparation</p>
-                <p>Original STEM research by student authors, reviewed for methodological clarity, ethics compliance, and article-level discoverability.</p>
-                <div class="journal-metric-grid">
-                    <div>
-                        <strong>0</strong>
-                        <span>Published articles</span>
+
+                <!-- Issue metadata card -->
+                <div class="j-issue-meta">
+                    <div class="j-issue-status">
+                        <span class="j-pulse-dot"></span>
+                        Pilot issue in preparation
                     </div>
-                    <div>
-                        <strong>20+</strong>
-                        <span>STEM disciplines</span>
-                    </div>
-                    <div>
-                        <strong>2+</strong>
-                        <span>Reviewers per article</span>
-                    </div>
-                    <div>
-                        <strong>0</strong>
-                        <span>Reader fees</span>
-                    </div>
+                    <p>Peer-reviewed STEM research by student authors. Each article will include HTML abstracts, DOI
+                        metadata, CC BY license, and open-access PDF downloads.</p>
+                </div>
+
+                <!-- Stats 2×2 -->
+                <div class="j-issue-stats">
+                    <div><strong>0</strong><span>Articles</span></div>
+                    <div><strong>20+</strong><span>Disciplines</span></div>
+                    <div><strong>2+</strong><span>Reviewers/article</span></div>
+                    <div><strong>$0</strong><span>To publish</span></div>
                 </div>
             </aside>
         </div>
     </section>
 
-    <main id="journal-main">
-        <section class="journal-section journal-featured" id="current-issue">
-            <div class="journal-section-heading">
-                <p class="journal-eyebrow">Latest research</p>
-                <h2>Featured Articles</h2>
-                <p>Article pages will be linked here once the pilot issue is published. Each page will include Google Scholar citation metadata, visible abstracts, DOI links, and downloadable PDFs.</p>
+    <!-- Stats bar -->
+    <div class="j-stats-bar">
+        <div class="j-stats-inner">
+            <div class="j-stat">
+                <span class="j-stat-num">0</span>
+                <span class="j-stat-lbl">Published Articles</span>
             </div>
+            <div class="j-stat-sep"></div>
+            <div class="j-stat">
+                <span class="j-stat-num">1</span>
+                <span class="j-stat-lbl">Issue in Preparation</span>
+            </div>
+            <div class="j-stat-sep"></div>
+            <div class="j-stat">
+                <span class="j-stat-num">20+</span>
+                <span class="j-stat-lbl">STEM Disciplines</span>
+            </div>
+            <div class="j-stat-sep"></div>
+            <div class="j-stat">
+                <span class="j-stat-num">$0</span>
+                <span class="j-stat-lbl">Article Processing Charge</span>
+            </div>
+        </div>
+    </div>
 
-            <div class="journal-article-grid">
-                <article class="journal-article-card">
-                    <div class="journal-article-visual journal-visual-blue">
-                        <span>Original Research</span>
+    <main id="jmain">
+
+        <!-- ── Featured Articles ── -->
+        <section class="j-sec" id="current-issue">
+            <div class="j-sec-inner">
+                <div class="j-sec-hd">
+                    <p class="j-eyebrow">Latest Research</p>
+                    <h2>Featured Articles</h2>
+                    <p>Articles will appear here upon publication. Each page will include Google Scholar citation
+                        metadata, a visible HTML abstract, DOI link, and an open-access PDF download.</p>
+                    <a href="#" class="j-text-link">Browse all issues →</a>
+                </div>
+                <div class="j-articles-grid">
+                    <article class="j-article-card">
+                        <div class="j-article-hd j-blue">
+                            <div class="j-article-hd-deco1"></div>
+                            <div class="j-article-hd-deco2"></div>
+                            <span class="j-article-type">Original Research</span>
+                        </div>
+                        <div class="j-article-body">
+                            <div class="j-article-meta">
+                                <span class="j-oa">Open Access</span>
+                                <span class="j-coming">Coming soon</span>
+                            </div>
+                            <h3>Computational and experimental STEM studies from student researchers</h3>
+                            <p class="j-article-authors">Student authors · Faculty and editorial oversight</p>
+                            <p>Full HTML abstracts, article metadata, declarations, references, and accessible PDF
+                                downloads on each article landing page.</p>
+                        </div>
+                    </article>
+
+                    <article class="j-article-card">
+                        <div class="j-article-hd j-green">
+                            <div class="j-article-hd-deco1"></div>
+                            <div class="j-article-hd-deco2"></div>
+                            <span class="j-article-type">Review Article</span>
+                        </div>
+                        <div class="j-article-body">
+                            <div class="j-article-meta">
+                                <span class="j-oa">Open Access</span>
+                                <span class="j-coming">Coming soon</span>
+                            </div>
+                            <h3>Review articles synthesizing current topics across Biology, AI, and sustainability</h3>
+                            <p class="j-article-authors">Student authors · Double-blind peer review</p>
+                            <p>Structured abstracts, verifiable references, and transparent authorship and AI
+                                disclosure statements throughout.</p>
+                        </div>
+                    </article>
+
+                    <article class="j-article-card">
+                        <div class="j-article-hd j-gold">
+                            <div class="j-article-hd-deco1"></div>
+                            <div class="j-article-hd-deco2"></div>
+                            <span class="j-article-type">Methods Paper</span>
+                        </div>
+                        <div class="j-article-body">
+                            <div class="j-article-meta">
+                                <span class="j-oa">Open Access</span>
+                                <span class="j-coming">Coming soon</span>
+                            </div>
+                            <h3>Methods, protocols, and reproducible workflows for student-led STEM research</h3>
+                            <p class="j-article-authors">Student authors · Editorial quality control</p>
+                            <p>Emphasis on reproducibility, data availability, clear figures, and machine-readable
+                                scholarly metadata.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── For Authors ── -->
+        <section class="j-sec j-sec-alt" id="for-authors">
+            <div class="j-sec-inner">
+                <div class="j-authors-grid">
+                    <div class="j-authors-left">
+                        <p class="j-eyebrow">For Authors</p>
+                        <h2>Submit research that reads like science.</h2>
+                        <p>We accept original STEM research (IMRaD format), review articles, methods papers,
+                            perspectives, and commentaries. Authors must meet ethics, formatting, and disclosure
+                            requirements before entering peer review.</p>
+                        <div class="j-types-row">
+                            <span>Original Research</span>
+                            <span>Review Articles</span>
+                            <span>Methods Papers</span>
+                            <span>Perspectives</span>
+                            <span>Commentaries</span>
+                        </div>
+                        <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Submission%20Inquiry"
+                            class="j-btn-primary" style="margin-top: 1.75rem; display:inline-flex;">Contact the Editorial Team</a>
                     </div>
-                    <div class="journal-card-meta">
-                        <span>Original Research</span>
-                        <span>Coming soon</span>
+
+                    <div class="j-authors-right">
+                        <h3>Submission process</h3>
+                        <div class="j-steps">
+                            <div class="j-step">
+                                <span class="j-step-num">01</span>
+                                <div>
+                                    <h4>Pre-submission check</h4>
+                                    <p>Verify originality, ethics compliance, formatting, and all authorship criteria
+                                        before you submit.</p>
+                                </div>
+                            </div>
+                            <div class="j-step">
+                                <span class="j-step-num">02</span>
+                                <div>
+                                    <h4>Desk review</h4>
+                                    <p>Editorial team evaluates scope, format, and completeness within 5 business
+                                        days.</p>
+                                </div>
+                            </div>
+                            <div class="j-step">
+                                <span class="j-step-num">03</span>
+                                <div>
+                                    <h4>Double-blind peer review</h4>
+                                    <p>Two independent reviewers evaluate methodology, clarity, references, and
+                                        contribution. Target: 4 weeks.</p>
+                                </div>
+                            </div>
+                            <div class="j-step">
+                                <span class="j-step-num">04</span>
+                                <div>
+                                    <h4>Publication</h4>
+                                    <p>Accepted articles published as HTML + PDF with DOI, CC BY 4.0, and
+                                        full citation metadata.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="j-checklist">
+                            <h4>Pre-submission checklist</h4>
+                            <ul>
+                                <li>150–250 word structured abstract (Background, Methods, Results, Conclusion)</li>
+                                <li>3–8 semicolon-separated keywords</li>
+                                <li>IEEE-style numbered references</li>
+                                <li>Originality and authorship declaration signed</li>
+                                <li>Ethics documentation for human subjects research</li>
+                                <li>AI use disclosure where tools affected the manuscript</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Computational and experimental STEM studies from student researchers</h3>
-                    <p class="journal-authors">Student authors · Faculty and editorial oversight</p>
-                    <p>Full HTML abstracts, article metadata, declarations, references, and accessible PDF downloads will appear on each article landing page.</p>
-                    <span class="journal-open-access">Open Access</span>
-                </article>
+                </div>
+            </div>
+        </section>
 
-                <article class="journal-article-card">
-                    <div class="journal-article-visual journal-visual-green">
-                        <span>Review Article</span>
+        <!-- ── About the Journal ── -->
+        <section class="j-sec" id="about">
+            <div class="j-sec-inner">
+                <div class="j-sec-hd">
+                    <p class="j-eyebrow">About the Journal</p>
+                    <h2>A rigorous, open record for student research</h2>
+                    <p>Synthica Journal is designed to function like a junior Nature or PLOS ONE — professional
+                        editorial standards, full metadata compliance, and zero paywalls. Student research deserves
+                        the same discoverability as published professional science.</p>
+                </div>
+                <div class="j-pillars-grid">
+                    <div class="j-pillar">
+                        <div class="j-pillar-num">01</div>
+                        <h3>Double-blind review</h3>
+                        <p>Manuscripts evaluated by at least two independent reviewers. Author and reviewer identities
+                            remain concealed throughout the entire process.</p>
                     </div>
-                    <div class="journal-card-meta">
-                        <span>Review Article</span>
-                        <span>Coming soon</span>
+                    <div class="j-pillar">
+                        <div class="j-pillar-num">02</div>
+                        <h3>IEEE-aligned ethics</h3>
+                        <p>Publication ethics, COI disclosure, authorship standards, and AI use policy follow IEEE
+                            publication ethics and COPE guidelines.</p>
                     </div>
-                    <h3>Review articles synthesizing current topics across Biology, AI, and sustainability</h3>
-                    <p class="journal-authors">Student authors · Double-blind peer review</p>
-                    <p>Each review will use structured abstracts, verifiable references, and transparent authorship and AI disclosure statements.</p>
-                    <span class="journal-open-access">Open Access</span>
-                </article>
-
-                <article class="journal-article-card">
-                    <div class="journal-article-visual journal-visual-gold">
-                        <span>Methods Paper</span>
+                    <div class="j-pillar">
+                        <div class="j-pillar-num">03</div>
+                        <h3>Fully open access</h3>
+                        <p>Every article is immediately available under CC BY 4.0. No cost to authors or readers. No
+                            embargo. No article processing charges.</p>
                     </div>
-                    <div class="journal-card-meta">
-                        <span>Methods Paper</span>
-                        <span>Coming soon</span>
+                    <div class="j-pillar">
+                        <div class="j-pillar-num">04</div>
+                        <h3>Scholar-ready pages</h3>
+                        <p>Article pages include citation metadata, stable DOI-linked URLs, crawlable abstracts, and
+                            downloadable PDFs for Google Scholar indexing.</p>
                     </div>
-                    <h3>Methods, protocols, and reproducible workflows for student-led research</h3>
-                    <p class="journal-authors">Student authors · Editorial quality control</p>
-                    <p>Methods papers will emphasize reproducibility, data availability, clear figures, and machine-readable scholarly metadata.</p>
-                    <span class="journal-open-access">Open Access</span>
-                </article>
-            </div>
-        </section>
-
-        <section class="journal-section journal-explore">
-            <div class="journal-explore-card journal-explore-primary">
-                <p class="journal-eyebrow">Browse</p>
-                <h2>Find research by issue, article type, or discipline.</h2>
-                <p>The journal archive is designed for simple HTML links and stable URLs so articles remain discoverable by readers, institutions, and scholarly crawlers.</p>
-            </div>
-            <div class="journal-search-card" role="search" aria-label="Journal search preview">
-                <label for="journal-search-preview">Search the journal</label>
-                <div class="journal-search-box">
-                    <input id="journal-search-preview" type="search" placeholder="Search articles, authors, topics..." disabled>
-                    <button type="button" disabled>Search</button>
-                </div>
-                <p>Search will activate when the article archive launches.</p>
-            </div>
-        </section>
-
-        <section class="journal-section journal-about-block">
-            <div>
-                <p class="journal-eyebrow">About the journal</p>
-                <h2>A professional record for student research</h2>
-                <p>Synthica Journal exists to make student science citable, discoverable, and credible. The journal follows open-access publishing principles, double-blind peer review, and IEEE-aligned publication ethics while remaining readable for first-time authors.</p>
-            </div>
-            <div class="journal-trust-grid">
-                <div class="journal-trust-card">
-                    <span aria-hidden="true">01</span>
-                    <h3>Double-blind review</h3>
-                    <p>Manuscripts are evaluated by at least two independent reviewers whenever external peer review is required.</p>
-                </div>
-                <div class="journal-trust-card">
-                    <span aria-hidden="true">02</span>
-                    <h3>Ethics first</h3>
-                    <p>Publication ethics, conflicts of interest, authorship, AI use, and human-subjects safeguards are treated as launch requirements.</p>
-                </div>
-                <div class="journal-trust-card">
-                    <span aria-hidden="true">03</span>
-                    <h3>Scholar-ready pages</h3>
-                    <p>Article pages are planned around crawlable HTML, stable URLs, citation metadata, PDFs, and visible abstracts.</p>
                 </div>
             </div>
         </section>
 
-        <section class="journal-section journal-split" id="for-authors">
-            <div class="journal-author-panel">
-                <p class="journal-eyebrow">For authors</p>
-                <h2>Submit research that reads like science, not a school assignment.</h2>
-                <p>Original STEM research should use the IMRaD structure: Introduction, Methods, Results, and Discussion. Authors should be ready to disclose funding, conflicts of interest, ethics approval where applicable, data availability, author contributions, and substantive AI use.</p>
-                <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Submission%20Inquiry"
-                    class="journal-primary-button">Contact the Editorial Team</a>
-            </div>
-            <div class="journal-checklist">
-                <h3>Pre-submission essentials</h3>
-                <ul>
-                    <li>150-250 word structured abstract</li>
-                    <li>3-8 keywords, separated by semicolons</li>
-                    <li>IEEE-style numbered references</li>
-                    <li>Originality and authorship confirmation</li>
-                    <li>Ethics documentation for human subjects or regulated research</li>
-                    <li>Clear AI disclosure when tools shaped the manuscript</li>
-                </ul>
+        <!-- ── Our Team ── -->
+        <section class="j-sec j-sec-alt" id="team">
+            <div class="j-sec-inner">
+                <div class="j-sec-hd">
+                    <p class="j-eyebrow">Editorial Team</p>
+                    <h2>Our Team</h2>
+                    <p>Synthica Journal is built and led by a dedicated editorial team committed to rigorous peer
+                        review, ethical publishing, and making student research globally discoverable and credible.</p>
+                </div>
+
+                <h3 class="j-team-subhd">Leadership</h3>
+                <div class="j-team-grid">
+                    <div class="j-team-card">
+                        <div class="j-avatar">FA</div>
+                        <div class="j-team-info">
+                            <h4>Faculty Advisor</h4>
+                            <span class="j-team-role">Academic Oversight &amp; Ethics</span>
+                            <p>Provides adult academic supervision for editorial decisions, borderline cases, and
+                                research safeguards. Ensures alignment with IEEE ethics and serves as final authority
+                                on contested editorial decisions.</p>
+                        </div>
+                    </div>
+                    <div class="j-team-card">
+                        <div class="j-avatar">EC</div>
+                        <div class="j-team-info">
+                            <h4>Editorial Chair</h4>
+                            <span class="j-team-role">Peer Review &amp; Publication Workflow</span>
+                            <p>Manages desk review, reviewer assignment, decision letters, author communications, and
+                                publication scheduling. Primary contact for all author and reviewer inquiries.</p>
+                        </div>
+                    </div>
+                    <div class="j-team-card">
+                        <div class="j-avatar">TL</div>
+                        <div class="j-team-info">
+                            <h4>Technical Lead</h4>
+                            <span class="j-team-role">Metadata, Platform &amp; Accessibility</span>
+                            <p>Maintains the publishing platform, citation metadata infrastructure, digital
+                                accessibility compliance, sitemap structure, and Google Scholar indexing readiness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="j-team-subhd">Associate Editors</h3>
+                <p class="j-team-subdesc">Associate editors are recruited by discipline area and serve as primary
+                    contacts for manuscripts in their field. Each position is currently open for applications.</p>
+                <div class="j-assoc-grid">
+                    <div class="j-assoc-card">
+                        <span>Biology &amp; Life Sciences</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                    <div class="j-assoc-card">
+                        <span>Computer Science &amp; AI</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                    <div class="j-assoc-card">
+                        <span>Physics &amp; Engineering</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                    <div class="j-assoc-card">
+                        <span>Chemistry &amp; Materials</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                    <div class="j-assoc-card">
+                        <span>Earth &amp; Environmental Science</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                    <div class="j-assoc-card">
+                        <span>Mathematics &amp; Statistics</span>
+                        <p>Position open &mdash; <a
+                                href="mailto:editorial@synthicajournal.org?subject=Associate%20Editor%20Application">Apply</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="j-team-cta">
+                    <p>Interested in reviewing manuscripts for Synthica Journal?</p>
+                    <a href="mailto:editorial@synthicajournal.org?subject=Reviewer%20Application%20%E2%80%94%20Synthica%20Journal"
+                        class="j-text-link">Apply to review →</a>
+                </div>
             </div>
         </section>
 
-        <section class="journal-section journal-workflow" id="workflow">
-            <div class="journal-section-heading">
-                <p class="journal-eyebrow">Editorial process</p>
-                <h2>From submission to publication</h2>
-                <p>A transparent workflow helps first-time authors understand what happens after they submit a manuscript.</p>
-            </div>
-            <div class="journal-workflow-grid">
-                <div class="journal-workflow-step">
-                    <span>01</span>
-                    <h3>Desk Review</h3>
-                    <p>The editorial team checks scope, formatting, originality, and required ethics documents before peer review.</p>
+        <!-- ── Policies ── -->
+        <section class="j-sec" id="policies">
+            <div class="j-sec-inner">
+                <div class="j-sec-hd">
+                    <p class="j-eyebrow">Editorial Transparency</p>
+                    <h2>Policies built for trust</h2>
+                    <p>Our editorial policies follow IEEE publication ethics, COPE guidelines, and Society for Science
+                        safeguards. Full policy documents will be published with the journal launch.</p>
                 </div>
-                <div class="journal-workflow-step">
-                    <span>02</span>
-                    <h3>Double-Blind Review</h3>
-                    <p>At least two reviewers evaluate methodology, clarity, references, and research contribution.</p>
-                </div>
-                <div class="journal-workflow-step">
-                    <span>03</span>
-                    <h3>Revision & Proofs</h3>
-                    <p>Authors respond to reviewer feedback, approve edited proofs, and finalize article metadata.</p>
-                </div>
-                <div class="journal-workflow-step">
-                    <span>04</span>
-                    <h3>Open Publication</h3>
-                    <p>Accepted work is published as HTML plus PDF with DOI-ready metadata and CC BY licensing.</p>
+                <div class="j-policies-grid">
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#10033;</div>
+                        <h3>Peer Review</h3>
+                        <p>Double-blind, minimum two reviewers, conflict recusal, written rationale for every
+                            decision, and a 4-week target turnaround from reviewer assignment.</p>
+                    </div>
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#9678;</div>
+                        <h3>Open Access</h3>
+                        <p>Immediate open access under CC BY 4.0 with no article processing charges for authors or
+                            reading fees for anyone.</p>
+                    </div>
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#9672;</div>
+                        <h3>Authorship</h3>
+                        <p>All authors must meet ICMJE authorship criteria. CRediT taxonomy is used to document
+                            individual contributions transparently on every article.</p>
+                    </div>
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#10103;</div>
+                        <h3>AI Disclosure</h3>
+                        <p>AI tools cannot be listed as authors. Substantive AI-generated content must be disclosed
+                            per IEEE AI ethics policy. Grammar tools do not require disclosure.</p>
+                    </div>
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#9671;</div>
+                        <h3>Ethics &amp; Integrity</h3>
+                        <p>No plagiarism, fabrication, falsification, or simultaneous submission. Human subjects
+                            research requires prior ethics approval documentation before review.</p>
+                    </div>
+                    <div class="j-policy-card">
+                        <div class="j-policy-icon">&#8635;</div>
+                        <h3>Corrections</h3>
+                        <p>Factual errors corrected via published Erratum. Research fraud results in retraction with
+                            a clear, visible notice permanently attached to the article page.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="journal-section journal-policy-strip" id="policies">
-            <div class="journal-section-heading">
-                <p class="journal-eyebrow">Editorial transparency</p>
-                <h2>Policies built for trust</h2>
-                <p>The full policy library will expand as the journal platform launches. These standards guide the editorial design from day one.</p>
-            </div>
-            <div class="journal-policy-grid">
-                <article>
-                    <h3>Peer review</h3>
-                    <p>Double-blind review, conflict recusal, reviewer confidentiality, and written editorial rationales.</p>
-                </article>
-                <article>
-                    <h3>Open access</h3>
-                    <p>Immediate open access under CC BY 4.0 with no article processing charges for authors.</p>
-                </article>
-                <article>
-                    <h3>Authorship</h3>
-                    <p>Author contributions follow ICMJE criteria and the CRediT taxonomy.</p>
-                </article>
-                <article>
-                    <h3>Corrections</h3>
-                    <p>Post-publication corrections, errata, and retractions are handled through visible scholarly notices.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="journal-section journal-board-teaser">
-            <div class="journal-section-heading">
-                <p class="journal-eyebrow">Editorial leadership</p>
-                <h2>Built around governance, review quality, and long-term credibility.</h2>
-            </div>
-            <div class="journal-board-grid">
-                <article>
-                    <span>Faculty Advisor</span>
-                    <h3>Oversight & ethics</h3>
-                    <p>Provides adult academic supervision for editorial standards, borderline decisions, and research safeguards.</p>
-                </article>
-                <article>
-                    <span>Editorial Chair</span>
-                    <h3>Peer review workflow</h3>
-                    <p>Coordinates desk review, reviewer assignment, decision letters, and publication scheduling.</p>
-                </article>
-                <article>
-                    <span>Technical Lead</span>
-                    <h3>Metadata & access</h3>
-                    <p>Maintains page structure, sitemap readiness, citation metadata, and accessible publishing templates.</p>
-                </article>
+        <!-- ── Disciplines ── -->
+        <section class="j-sec j-sec-alt" id="disciplines">
+            <div class="j-sec-inner">
+                <div class="j-disciplines-grid">
+                    <div>
+                        <p class="j-eyebrow">Scope</p>
+                        <h2>STEM fields covered</h2>
+                        <p>Synthica accepts original research across the full STEM spectrum. Interdisciplinary and
+                            cross-disciplinary work is welcomed and actively encouraged.</p>
+                    </div>
+                    <div class="j-tags">
+                        <span>Astronomy &amp; Astrophysics</span>
+                        <span>Biology — Cellular &amp; Molecular</span>
+                        <span>Biology — Ecology &amp; Environmental</span>
+                        <span>Biology — Genetics &amp; Genomics</span>
+                        <span>Biomedical Engineering</span>
+                        <span>Chemistry — Organic</span>
+                        <span>Chemistry — Inorganic &amp; Physical</span>
+                        <span>Computer Science — Algorithms</span>
+                        <span>Computer Science — ML &amp; AI</span>
+                        <span>Computer Science — Systems</span>
+                        <span>Earth &amp; Atmospheric Sciences</span>
+                        <span>Electrical Engineering</span>
+                        <span>Environmental Science</span>
+                        <span>Mathematics — Applied</span>
+                        <span>Mathematics — Pure</span>
+                        <span>Mechanical Engineering</span>
+                        <span>Neuroscience &amp; Cognitive Science</span>
+                        <span>Physics — Classical &amp; Quantum</span>
+                        <span>Public Health &amp; Epidemiology</span>
+                        <span>STEM Social Science</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="journal-section journal-disciplines" id="disciplines" aria-labelledby="journal-disciplines-title">
-            <div>
-                <p class="journal-eyebrow">Disciplines</p>
-                <h2 id="journal-disciplines-title">STEM fields covered</h2>
-            </div>
-            <div class="journal-tags">
-                <span>Astronomy & Astrophysics</span>
-                <span>Biology</span>
-                <span>Biomedical Engineering</span>
-                <span>Chemistry</span>
-                <span>Computer Science</span>
-                <span>Earth & Atmospheric Sciences</span>
-                <span>Environmental Science</span>
-                <span>Mathematics</span>
-                <span>Neuroscience</span>
-                <span>Physics</span>
-                <span>Public Health</span>
-                <span>STEM Social Science</span>
+        <!-- ── Submit CTA ── -->
+        <section class="j-cta-sec">
+            <div class="j-cta-inner">
+                <div class="j-badge-pill" style="margin-bottom: 1.5rem;">Ready to publish?</div>
+                <h2>Submit your research to Synthica Journal.</h2>
+                <p>A credible, citable, open-access venue for student STEM research — at zero cost to authors or
+                    readers. Professional peer review, DOI assignment, and long-term discoverability.</p>
+                <a href="mailto:editorial@synthicajournal.org?subject=Synthica%20Journal%20Manuscript%20Submission"
+                    class="j-btn-primary">Submit Your Manuscript</a>
             </div>
         </section>
     </main>
 
-    <footer class="journal-footer">
-        <div class="journal-footer-grid">
-            <div>
-                <a href="index.html" class="journal-footer-brand">Synthica Journal</a>
-                <p>Independent open-access STEM publishing for student researchers.</p>
+    <!-- Journal footer -->
+    <footer class="j-footer">
+        <div class="j-footer-inner">
+            <div class="j-footer-brand">
+                <a href="index.html" class="j-footer-logo">
+                    <img src="src/logo/Synthica Logo.png" alt="Synthica">
+                    <div>
+                        <span>Synthica</span>
+                        <span>Journal</span>
+                    </div>
+                </a>
+                <p>Independent open-access STEM journal for student researchers. Peer-reviewed. CC BY 4.0.</p>
+                <a href="mailto:editorial@synthicajournal.org" class="j-footer-email">editorial@synthicajournal.org</a>
             </div>
-            <div>
-                <h2>Explore</h2>
+
+            <div class="j-footer-col">
+                <h3>Browse</h3>
                 <a href="#current-issue">Current Issue</a>
-                <a href="#for-authors">For Authors</a>
-                <a href="#policies">Policies</a>
+                <a href="#">All Issues</a>
+                <a href="#">Article Archive</a>
+                <a href="#">Search</a>
             </div>
-            <div>
-                <h2>Contact</h2>
-                <a href="mailto:editorial@synthicajournal.org">editorial@synthicajournal.org</a>
-                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0 License</a>
+
+            <div class="j-footer-col">
+                <h3>For Authors</h3>
+                <a href="#for-authors">Submission Guidelines</a>
+                <a href="#">Article Types</a>
+                <a href="#">Formatting Guide</a>
+                <a href="#">Author FAQ</a>
+            </div>
+
+            <div class="j-footer-col">
+                <h3>Policies</h3>
+                <a href="#policies">Policies Overview</a>
+                <a href="#">Peer Review</a>
+                <a href="#">Open Access</a>
+                <a href="#">AI Disclosure</a>
+                <a href="#">Ethics</a>
+            </div>
+
+            <div class="j-footer-col">
+                <h3>About</h3>
+                <a href="#about">About the Journal</a>
+                <a href="#team">Editorial Team</a>
+                <a href="#">Advisory Board</a>
+                <a href="#">Aims &amp; Scope</a>
+                <a href="index.html">← Synthica.org</a>
             </div>
         </div>
-        <p class="journal-footer-bottom">© 2026 Synthica Journal. Content licensed under CC BY 4.0. ISSN pending.</p>
+        <div class="j-footer-bottom">
+            <p>© 2026 Synthica Journal. Content licensed under
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+                ISSN pending. Part of the <a href="index.html">Synthica</a> research education platform.
+            </p>
+        </div>
     </footer>
+
+    <script>
+        // Journal dropdown nav
+        const navItems = document.querySelectorAll('.j-nav-item');
+        navItems.forEach(item => {
+            const btn = item.querySelector('.j-nav-btn');
+            btn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                navItems.forEach(i => { i.classList.remove('open'); i.querySelector('.j-nav-btn').setAttribute('aria-expanded', 'false'); });
+                if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+            });
+        });
+        document.addEventListener('click', e => {
+            if (!e.target.closest('.j-nav-item')) {
+                navItems.forEach(i => { i.classList.remove('open'); i.querySelector('.j-nav-btn').setAttribute('aria-expanded', 'false'); });
+            }
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') navItems.forEach(i => { i.classList.remove('open'); i.querySelector('.j-nav-btn').setAttribute('aria-expanded', 'false'); });
+        });
+
+        // Sticky header shadow
+        const jHeader = document.querySelector('.j-header');
+        window.addEventListener('scroll', () => { jHeader.classList.toggle('j-header-sticky', window.scrollY > 10); }, { passive: true });
+    </script>
 </body>
 
 </html>
