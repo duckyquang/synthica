@@ -12,28 +12,14 @@
     </url>
     <!-- About Page -->
     <url>
-        <loc>https://www.synthica.org/about.html</loc>
+        <loc>https://www.synthica.org/about</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Programs Page -->
-    <url>
-        <loc>https://www.synthica.org/programs.html</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <!-- Competition Page -->
-    <url>
-        <loc>https://www.synthica.org/competition.html</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
     <!-- Work With Us Page -->
     <url>
-        <loc>https://www.synthica.org/work-with-us.html</loc>
+        <loc>https://www.synthica.org/work-with-us</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
