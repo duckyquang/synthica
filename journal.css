@@ -1294,14 +1294,24 @@ button { font: inherit; cursor: pointer; }
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 1.5rem var(--pad-x) 0;
+    background: var(--bg);
 }
 .j-crumbs ol {
     list-style: none;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin: 0;
+    padding: 0;
     font-size: 0.85rem;
     color: var(--text-2);
+}
+.j-crumbs li {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .j-crumbs li:not(:last-child)::after {
     content: "/";
@@ -1317,14 +1327,18 @@ button { font: inherit; cursor: pointer; }
 
 /* Page header ------------------------------------------------- */
 .j-pageheader {
-    background: linear-gradient(180deg, var(--surface-2) 0%, var(--bg) 100%);
+    background: var(--surface-2);
     border-bottom: 1px solid var(--rule);
     padding: 2.5rem 0 3.5rem;
+    margin-top: 1.5rem;
 }
 .j-pageheader-inner {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 var(--pad-x);
+}
+.j-pageheader .j-eyebrow {
+    margin-bottom: 0.5rem;
 }
 .j-page-h1 {
     font-family: var(--font-serif);
@@ -1340,7 +1354,11 @@ button { font: inherit; cursor: pointer; }
     line-height: 1.6;
     color: var(--text-2);
     max-width: 62ch;
+    margin: 0;
 }
+
+/* When .j-pageheader follows .j-crumbs, collapse the gap */
+.j-crumbs + .j-pageheader { margin-top: 0.75rem; }
 
 /* Policy meta strip ------------------------------------------- */
 .j-policy-meta {
