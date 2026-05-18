@@ -5,53 +5,11 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
     <!-- Main Synthica site -->
-    <url><loc>https://www.synthica.org/</loc><lastmod>2026-05-17</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.synthica.org/about</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/work-with-us</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.synthica.org/</loc><lastmod>2026-05-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://www.synthica.org/about</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.synthica.org/work-with-us</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-    <!-- Synthica Journal — homepage -->
-    <url><loc>https://www.synthica.org/journal</loc><lastmod>2026-05-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-
-    <!-- Journal — About -->
-    <url><loc>https://www.synthica.org/journal-about</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-about-team</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-about-advisory-board</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-about-reviewers</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-about-history</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Journal — Aims & Scope -->
-    <url><loc>https://www.synthica.org/journal-aims-and-scope</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-    <!-- Journal — Policies -->
-    <url><loc>https://www.synthica.org/journal-policies</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-peer-review</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-ethics</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-open-access</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-authorship</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-data-sharing</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-ai-disclosure</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-corrections</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-conflicts-of-interest</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-policies-human-subjects</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-    <!-- Journal — For Authors -->
-    <url><loc>https://www.synthica.org/journal-for-authors</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-authors-submission-guidelines</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-authors-formatting-guide</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-authors-author-checklist</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-authors-article-types</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-authors-faq</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Journal — For Reviewers -->
-    <url><loc>https://www.synthica.org/journal-for-reviewers</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-reviewers-guidelines</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.synthica.org/journal-for-reviewers-sign-up</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Journal — Discovery & utility -->
-    <url><loc>https://www.synthica.org/journal-issues</loc><lastmod>2026-05-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.synthica.org/journal-search</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-    <url><loc>https://www.synthica.org/journal-contact</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-    <url><loc>https://www.synthica.org/journal-announcements</loc><lastmod>2026-05-17</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.synthica.org/journal-submit</loc><lastmod>2026-05-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <!-- Synthica Journal -->
+    <url><loc>https://www.synthica.org/journal</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
 </urlset>
