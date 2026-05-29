@@ -5,6 +5,8 @@ import WorkWithUs from "./pages/WorkWithUs";
 import Newsletter from "./pages/Newsletter";
 import Article from "./pages/Article";
 import Admin from "./pages/Admin";
+import EditorialBoard from "./pages/EditorialBoard";
+import Journal from "./pages/Journal";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/newsletter/:slug" element={<Article />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/work-with-us" element={<WorkWithUs />} />
+        <Route path="/editorial-board" element={<EditorialBoard />} />
+        <Route path="/journal" element={<Journal />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

@@ -45,7 +45,18 @@ const Navbar = () => {
         <li>
           <a href="https://globalresearchchallenge.org" target="_blank" rel="noopener noreferrer">Competition</a>
         </li>
-        <li 
+        <li
+          className={`nav-item-dropdown ${hoveredDropdown === 'journal' ? 'active' : ''}`}
+          onMouseEnter={() => handleMouseEnter('journal')}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Link to="/journal" className="nav-link-dropdown">Journal</Link>
+          <ul className="dropdown-menu">
+            <li><Link to="/journal">Author Guidelines</Link></li>
+            <li><Link to="/editorial-board">Editorial Board</Link></li>
+          </ul>
+        </li>
+        <li
           className={`nav-item-dropdown ${hoveredDropdown === 'work' ? 'active' : ''}`}
           onMouseEnter={() => handleMouseEnter('work')}
           onMouseLeave={handleMouseLeave}
