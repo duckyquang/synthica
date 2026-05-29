@@ -356,10 +356,28 @@ const Journal = () => {
             <div className="jn-submit-block">
               <p className="jn-submit-label">Official Submission Portal &mdash; Volume 1, Edition 1</p>
               <a href={SUBMIT_URL} target="_blank" rel="noopener noreferrer" className="jn-submit-main-btn">
-                Submit Your Manuscript
+                Open Full Form
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </a>
               <p className="jn-submit-note">By submitting a manuscript, authors confirm that all co-authors have approved the submission, that the work is original and not under consideration elsewhere, and that the submission complies fully with these guidelines.</p>
+            </div>
+
+            <div className="jn-form-embed">
+              <p className="jn-form-label">Submit directly below &mdash; no account required</p>
+              <div className="jn-form-wrap">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdIdBbXG0TQcifO-Dafb1b7_c9qo6iWbLj-ZfOQmHGIPs59VA/viewform?embedded=true"
+                  width="100%"
+                  height="1600"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Synthica Journal Manuscript Submission Form"
+                  style={{ border: 'none', borderRadius: '12px', display: 'block' }}
+                >
+                  Loading form&hellip;
+                </iframe>
+              </div>
             </div>
           </section>
 

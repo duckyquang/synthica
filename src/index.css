@@ -6367,3 +6367,26 @@ body {
   .eb-leaders-grid { grid-template-columns: 1fr; }
   .eb-editors-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
 }
+
+/* Google Form embed */
+.jn-form-embed {
+  margin-top: 2rem;
+}
+
+.jn-form-label {
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2589ed;
+  margin-bottom: 1rem !important;
+  font-family: 'Garet', sans-serif;
+}
+
+.jn-form-wrap {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f8fafc;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
