@@ -179,8 +179,9 @@
             <div class="team-subsection">
                 <h3 class="team-subsection-title">Core Team</h3>
 
-                <!-- Featured Core Team Member -->
-                <div class="core-team-featured">
+                <!-- Featured Core Team Members -->
+                <div class="core-team-featured" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:1100px;margin:0 auto 2rem;">
+                    <!-- Quang -->
                     <div class="team-member-card featured-member-card">
                         <div class="featured-member-content">
                             <div class="member-image-placeholder">
@@ -188,21 +189,40 @@
                             </div>
                             <div class="featured-member-info">
                                 <h3 class="member-name">Duc Quang Bui</h3>
-                                <p class="member-role">Founder & Executive Director</p>
+                                <p class="member-role">Founder &amp; Executive Director</p>
                                 <p class="member-bio"></p>
                             </div>
                         </div>
                         <div class="member-socials featured-socials">
-                            <a href="https://www.linkedin.com/in/buiducquang/" class="social-link" aria-label="LinkedIn"
-                                target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
+                            <a href="https://www.linkedin.com/in/buiducquang/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Aaryan -->
+                    <div class="team-member-card featured-member-card">
+                        <div class="featured-member-content">
+                            <div class="member-image-placeholder">
+                                <img src="public/assets/editorial/aaryan.jpg" alt="Aaryan Senthilvanan" class="member-image">
+                            </div>
+                            <div class="featured-member-info">
+                                <h3 class="member-name">Aaryan Senthilvanan</h3>
+                                <p class="member-role">Chief Editor, Synthica Journal</p>
+                                <p class="member-bio"></p>
+                            </div>
+                        </div>
+                        <div class="member-socials featured-socials">
+                            <a href="https://orcid.org/0009-0005-7930-2224" class="social-link" aria-label="ORCID" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><path d="M8.5 7H10V17H8.5V7Z" fill="white"/><path d="M13 7H15.5C17.9 7 19.5 8.6 19.5 12C19.5 15.4 17.9 17 15.5 17H13V7ZM14.5 15.6H15.3C17 15.6 18 14.5 18 12C18 9.5 17 8.4 15.3 8.4H14.5V15.6Z" fill="white"/><circle cx="8.5" cy="5.5" r="1" fill="white"/></svg>
                             </a>
                         </div>
                     </div>
                 </div>
+                <style>
+                    @media (max-width: 768px) {
+                        .core-team-featured { grid-template-columns: 1fr !important; }
+                    }
+                </style>
 
                 <!-- Expandable Core Team Members -->
                 <div class="core-team-expandable">
@@ -421,6 +441,16 @@
                 <div class="team-grid">
                     <div class="team-member-card">
                         <div class="member-image-placeholder">
+                            <img src="public/assets/editorial/aaryan.jpg" alt="Aaryan Senthilvanan" class="member-image">
+                        </div>
+                        <h3 class="member-name">Aaryan Senthilvanan</h3>
+                        <p class="member-role">Expertise Mentor</p>
+                        <p class="member-bio">New York Times Editor | Research at Stanford University and California
+                            Institute of Technology | Founder @ SYALIS / BrainReach</p>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="member-image-placeholder">
                             <img src="src/Synthica Preview Image (2)/32.png" alt="Bach Nguyen" class="member-image">
                         </div>
                         <h3 class="member-name">Bach Nguyen</h3>
@@ -459,17 +489,6 @@
                         <p class="member-bio">Research Assistant at the Well-being, Health, and Interpersonal
                             Relationships Lab | Lab Manager & previously Undergraduate Research Assistant at ODESI
                             Research Lab</p>
-                    </div>
-
-                    <div class="team-member-card">
-                        <div class="member-image-placeholder">
-                            <img src="src/Synthica Preview Image (2)/31.png" alt="Aaryan Senthilvanan"
-                                class="member-image">
-                        </div>
-                        <h3 class="member-name">Aaryan Senthilvanan</h3>
-                        <p class="member-role">Expertise Mentor</p>
-                        <p class="member-bio">New York Times Editor | Research at Stanford University and California
-                            Institute of Technology | Founder @ SYALIS / BrainReach</p>
                     </div>
 
                     <div class="team-member-card">
