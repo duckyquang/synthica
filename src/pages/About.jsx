@@ -137,11 +137,12 @@ const About = () => {
               <div className="team-member-card featured-member-card">
                 <div className="featured-member-content">
                   <div className="member-image-placeholder">
-                    <img src="/assets/Synthica Preview Image/16.png" alt="Duc Quang Bui" className="member-image" />
+                    <img src="/assets/Synthica Preview Image/16.png" alt="Quang Bui" className="member-image" />
                   </div>
                   <div className="featured-member-info">
-                    <h3 className="member-name">Duc Quang Bui</h3>
+                    <h3 className="member-name">Quang Bui</h3>
                     <p className="member-role">Founder & Executive Director</p>
+                    <p className="member-bio">Researcher @ MIT LCP, Critical Data, CSAIL, Media Lab / Stanford HAI / UCLA</p>
                   </div>
                 </div>
                 <div className="member-socials featured-socials">

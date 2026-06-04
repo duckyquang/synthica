@@ -225,7 +225,7 @@ const EditorialBoard = () => (
             isPublished
           />
           <LeaderCard
-            name="Ng Kai Ming"
+            name="Kai Ming Ng"
             role="Chief Editor — AI Policy"
             roleBadge="chief"
             orcid="0009-0004-7109-0266"

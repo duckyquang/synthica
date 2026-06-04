@@ -11,7 +11,7 @@ const CollegesScroller = () => {
 
   return (
     <section className="colleges-section">
-      <h2 className="colleges-heading">Backed by students and professors from</h2>
+      <h2 className="colleges-heading">Backed by researchers from</h2>
       <div className="colleges-scroller">
         <div className="colleges-track">
           {[...logos, ...logos].map((src, index) => (

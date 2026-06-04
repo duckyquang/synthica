@@ -368,7 +368,7 @@ const Journal = () => {
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSdIdBbXG0TQcifO-Dafb1b7_c9qo6iWbLj-ZfOQmHGIPs59VA/viewform?embedded=true"
                   width="100%"
-                  height="1600"
+                  height="800"
                   frameBorder="0"
                   marginHeight="0"
                   marginWidth="0"

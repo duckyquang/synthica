@@ -2855,7 +2855,8 @@ body {
 }
 
 .featured-member-card {
-    max-width: 900px;
+    max-width: 1040px;
+    width: 100%;
     margin: 0 auto;
     padding: 2.5rem;
     position: relative;
