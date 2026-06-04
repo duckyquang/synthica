@@ -236,11 +236,20 @@
                         <li><a href="editorial-board.html">Editorial Board</a></li>
                     </ul>
                 </li>
-                <li><a href="https://globalresearchchallenge.org" target="_blank" rel="noopener noreferrer">Competition</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="research-group.html" class="nav-link-dropdown">Programs</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://globalresearchchallenge.org" target="_blank" rel="noopener noreferrer">Competition</a></li>
+                        <li><a href="sister-program.html">SISTER Program</a></li>
+                        <li><a href="research-group.html">Research Group</a></li>
+                        <li><a href="free-course.html">Free Course</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item-dropdown">
                     <a href="work-with-us.html" class="nav-link-dropdown">Work with us</a>
                     <ul class="dropdown-menu">
                         <li><a href="work-with-us.html#partnerships">Partnerships</a></li>
+                        <li><a href="work-with-us.html#sponsors">Sponsorships</a></li>
                     </ul>
                 </li>
             </ul>
@@ -259,26 +268,6 @@
             <h2 class="section-title">Founding <span class="yellow-text">Team</span></h2>
             <p class="section-subtitle">Synthica is led by a founding team dedicated to removing barriers in academic publishing and research mentorship worldwide.</p>
             <div class="eb-leaders-grid" id="leaders-grid"></div>
-        </div>
-    </section>
-
-    <!-- Core Team -->
-    <section class="team-section eb-section-alt" id="core-team">
-        <div class="team-container">
-            <div class="section-badge">Core Team</div>
-            <h2 class="section-title">Operations <span class="highlight-blue">Team</span></h2>
-            <p class="section-subtitle">The people running Synthica behind the scenes — from marketing and finance to logistics, public relations, and global ambassadors.</p>
-            <div class="team-grid core-team-grid" id="core-team-grid"></div>
-        </div>
-    </section>
-
-    <!-- Expertise Mentors -->
-    <section class="team-section" id="mentors">
-        <div class="team-container">
-            <div class="section-badge">Expertise Team</div>
-            <h2 class="section-title">Research <span class="yellow-text">Mentors</span></h2>
-            <p class="section-subtitle">Experienced researchers from top institutions who guide and mentor Synthica's research community.</p>
-            <div class="team-grid" id="mentors-grid"></div>
         </div>
     </section>
 
@@ -397,38 +386,6 @@ const LEADERS = [
     }
 ];
 
-const CORE_TEAM = [
-    { name:'Tiffany Angelie',      role:'Chief Marketing Officer',        img:'src/Synthica Preview Image/28.png' },
-    { name:'Giridhar Krishnan',    role:'Vice Chief Marketing Officer',    img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Adda Fangajei',        role:'Chief Financial Officer',         img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Moksh Patel',          role:'Vice Chief Financial Officer',    img:'src/Synthica Preview Image/20.png' },
-    { name:'Darsh Savajiyani',     role:'Human Resources Coordinator',    img:'src/Synthica Preview Image/29.png' },
-    { name:'Fatma Ezzahra Jlali',  role:'Programs Coordinator',           img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Anushka Bhagat',       role:'Vice Expertise Director',         img:'src/Synthica Preview Image/23.png' },
-    { name:'Anirudh Balivada',     role:'Logistics Director',             img:'src/Synthica Preview Image/22.png' },
-    { name:'Omar Essetti',         role:'Public Relations Director',      img:'src/Synthica Preview Image/19.png' },
-    { name:'Sofia Dantas',         role:'Vice Public Relations Director', img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Harish Ram',           role:'Technical Director',             img:'src/Synthica Preview Image/27.png' },
-    { name:'Priyadharsni Murali',  role:'Vice Technical Director',        img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Hansika Mulani',       role:'Asia Ambassador',                img:'src/Synthica Preview Image/30.png' },
-    { name:'Mohammad Osama',       role:'Asia Ambassador',                img:'src/Synthica Preview Image/24.png' },
-    { name:'Pratham Vohra',        role:'Asia Ambassador',                img:'src/Synthica Preview Image/25.png' },
-    { name:'Muzi Kang',            role:'Europe Ambassador',              img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Iskra Nishio',         role:'Europe Ambassador',              img:'src/Synthica Preview Image/18.png' },
-    { name:'Ha Mai Pham',          role:'North America Ambassador',       img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Pranav Sainath',       role:'North America Ambassador',       img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-    { name:'Reddy Yeruva',         role:'North America Ambassador',       img:'src/logo/Synthica Preview Image (5).jpg', isLogo:true },
-];
-
-const MENTORS = [
-    { name:'Bach Nguyen',          role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/32.png', bio:'Researcher at Stanford University School of Medicine | Junior Fellow of Harvard Undergraduate Microbiology Society | Research Mentor at CSR-x' },
-    { name:'Arjun Dixit',         role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/33.png', bio:'Researcher at Georgia Institute of Technology, Emory University, Harvard University, and Stanford University School of Medicine | CEO and Founder of Nexflow' },
-    { name:'Brandon Yee',         role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/34.png', bio:'Researcher at MIT Sloan School of Management, Stanford University, and Duke University | Co-Founder at Yee Collins Research Group' },
-    { name:'Linh (Livia) Tran',   role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/35.png', bio:'Research Assistant at the Well-being, Health, and Interpersonal Relationships Lab | Lab Manager & Undergraduate Research Assistant at ODESI Research Lab' },
-    { name:'Aaryan Senthilvanan', role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/31.png', bio:'New York Times Editor | Research at Stanford University and California Institute of Technology | Founder @ SYALIS / BrainReach' },
-    { name:'Lyudong Yan',         role:'Expertise Mentor', img:'src/Synthica Preview Image (2)/36.png', bio:'Research at Stanford University and California Institute of Technology | Intern @ University of Michigan | Paid Doctoral Intern' },
-];
-
 const SENIOR_EDITORS = [
     {name:'Antonio Pineda Guerrero',   cat:'Biology',         orcid:'0009-0008-0704-1135', affils:['Universitat Jaume I, Spain','CARDIO — Cardiovascular Diseases'],          bio:'Medical student at Universitat Jaume I and Ernest Breva Award recipient. Research spans cardiovascular epidemiology, translational neuroscience, and digital health innovation.',         img:null},
     {name:'Soham Biren Katlariwala',   cat:'Computer Science',orcid:'0009-0008-1178-6543', affils:['IIT Madras, Chennai','Gujarat Technological University'],                   bio:'Interdisciplinary ML researcher at MIT Critical Data, Missouri S&T, and the Neuroscience Foundation. Specialising in Graph Theory, NeuroAI, and Radiology AI.',                        img:null},
@@ -533,24 +490,6 @@ function leaderCard(d) {
     </div>`;
 }
 
-function coreCard(m) {
-    const imgSrc = m.isLogo ? 'src/logo/Synthica Preview Image (5).jpg' : m.img;
-    return `<div class="team-member-card">
-        <div class="member-image-placeholder"><img src="${imgSrc}" alt="${m.name}" class="member-image"></div>
-        <h3 class="member-name">${m.name}</h3>
-        <p class="member-role">${m.role}</p>
-    </div>`;
-}
-
-function mentorCard(m) {
-    return `<div class="team-member-card">
-        <div class="member-image-placeholder"><img src="${m.img}" alt="${m.name}" class="member-image"></div>
-        <h3 class="member-name">${m.name}</h3>
-        <p class="member-role">${m.role}</p>
-        <p class="member-bio">${m.bio}</p>
-    </div>`;
-}
-
 function editorCard(e) {
     const initStr = inits(e.name);
     const bg = avatarGrad(e.name);
@@ -572,8 +511,6 @@ function editorCard(e) {
 
 /* ── Mount ── */
 document.getElementById('leaders-grid').innerHTML = LEADERS.map(leaderCard).join('');
-document.getElementById('core-team-grid').innerHTML = CORE_TEAM.map(coreCard).join('');
-document.getElementById('mentors-grid').innerHTML = MENTORS.map(mentorCard).join('');
 document.getElementById('senior-grid').innerHTML = SENIOR_EDITORS.map(editorCard).join('');
 document.getElementById('associate-grid').innerHTML = ASSOCIATE_EDITORS.map(editorCard).join('');
 document.getElementById('review-grid').innerHTML = REVIEW_EDITORS.map(editorCard).join('');

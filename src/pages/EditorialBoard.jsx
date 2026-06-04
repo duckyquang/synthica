@@ -187,39 +187,6 @@ const REVIEW_EDITORS = [
   { name: 'Shritha Repala', category: 'Computer Science', orcid: '0009-0009-1917-2113', affils: ['Synthica Research Group'], bio: 'Rising high school senior from Texas, aspiring Software Engineer specializing in EdTech. Intersects computer programming and AI with cognitive science to expand educational opportunities for neurodivergent individuals.', img: null },
 ];
 
-/* ── Static team data (mirrors About.jsx) ── */
-const CORE_TEAM = [
-  { name: 'Tiffany Angelie',       role: 'Chief Marketing Officer',         img: '/assets/Synthica Preview Image/28.png' },
-  { name: 'Giridhar Krishnan',     role: 'Vice Chief Marketing Officer',     img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Adda Fangajei',         role: 'Chief Financial Officer',          img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Moksh Patel',           role: 'Vice Chief Financial Officer',     img: '/assets/Synthica Preview Image/20.png' },
-  { name: 'Darsh Savajiyani',      role: 'Human Resources Coordinator',     img: '/assets/Synthica Preview Image/29.png' },
-  { name: 'Fatma Ezzahra Jlali',   role: 'Programs Coordinator',            img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Anushka Bhagat',        role: 'Vice Expertise Director',          img: '/assets/Synthica Preview Image/23.png' },
-  { name: 'Anirudh Balivada',      role: 'Logistics Director',              img: '/assets/Synthica Preview Image/22.png' },
-  { name: 'Omar Essetti',          role: 'Public Relations Director',       img: '/assets/Synthica Preview Image/19.png' },
-  { name: 'Sofia Dantas',          role: 'Vice Public Relations Director',  img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Harish Ram',            role: 'Technical Director',              img: '/assets/Synthica Preview Image/27.png' },
-  { name: 'Priyadharsni Murali',   role: 'Vice Technical Director',         img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Hansika Mulani',        role: 'Asia Ambassador',                 img: '/assets/Synthica Preview Image/30.png' },
-  { name: 'Mohammad Osama',        role: 'Asia Ambassador',                 img: '/assets/Synthica Preview Image/24.png' },
-  { name: 'Pratham Vohra',         role: 'Asia Ambassador',                 img: '/assets/Synthica Preview Image/25.png' },
-  { name: 'Muzi Kang',             role: 'Europe Ambassador',               img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Iskra Nishio',          role: 'Europe Ambassador',               img: '/assets/Synthica Preview Image/18.png' },
-  { name: 'Ha Mai Pham',           role: 'North America Ambassador',        img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Pranav Sainath',        role: 'North America Ambassador',        img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-  { name: 'Reddy Yeruva',          role: 'North America Ambassador',        img: '/assets/logo/Synthica Favicon.png', isLogo: true },
-];
-
-const EXPERTISE_TEAM = [
-  { name: 'Bach Nguyen',           role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/32.png', bio: 'Researcher at Stanford University School of Medicine | Junior Fellow of Harvard Undergraduate Microbiology Society | Research Mentor at CSR-x' },
-  { name: 'Arjun Dixit',          role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/33.png', bio: 'Researcher at Georgia Institute of Technology, Emory University, Harvard University, and Stanford University School of Medicine | CEO and Founder of Nexflow' },
-  { name: 'Brandon Yee',          role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/34.png', bio: 'Researcher at MIT Sloan School of Management, Stanford University, and Duke University | Co-Founder at Yee Collins Research Group' },
-  { name: 'Linh (Livia) Tran',    role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/35.png', bio: 'Research Assistant at the Well-being, Health, and Interpersonal Relationships Lab | Lab Manager & Undergraduate Research Assistant at ODESI Research Lab' },
-  { name: 'Aaryan Senthilvanan',  role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/31.png', bio: 'New York Times Editor | Research at Stanford University and California Institute of Technology | Founder @ SYALIS / BrainReach' },
-  { name: 'Lyudong Yan',          role: 'Expertise Mentor', img: '/assets/Synthica Preview Image (2)/36.png', bio: 'Research at Stanford University and California Institute of Technology | Intern @ University of Michigan | Paid Doctoral Intern' },
-];
-
 /* ── Page ── */
 const EditorialBoard = () => (
   <div className="eb-page">
@@ -266,51 +233,6 @@ const EditorialBoard = () => (
             bio="Policy researcher with 14 years of end-to-end experience in research, grant negotiation, programme development, evaluation, and training across NA, EMEA, and APAC regions. 10 years in software, security, and solution architecture spanning NUS, DSTA, DSO, NQSN+, and KPMG."
             img={gdrive('1LJVJj_VlsZf11GOmLFB2amwUll2SD1ZY')}
           />
-        </div>
-      </div>
-    </section>
-
-    {/* Core Operations Team */}
-    <section className="eb-section eb-section-alt">
-      <div className="eb-container">
-        <div className="section-badge">Core Team</div>
-        <h2 className="section-title">Operations <span className="highlight-text">Team</span></h2>
-        <p className="section-subtitle">The people running Synthica behind the scenes — from marketing and finance to logistics, public relations, and global ambassadors.</p>
-        <div className="team-grid core-team-grid">
-          {CORE_TEAM.map((m, i) => (
-            <motion.div key={i} className="team-member-card" {...fadeIn}>
-              <div className="member-image-placeholder">
-                <img src={m.img} alt={m.name} className="member-image"
-                  onError={e => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
-                <div className="member-initial" style={{ display:'none' }}>{m.name.charAt(0)}</div>
-              </div>
-              <h3 className="member-name">{m.name}</h3>
-              <p className="member-role">{m.role}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Expertise Mentors */}
-    <section className="eb-section">
-      <div className="eb-container">
-        <div className="section-badge">Expertise Team</div>
-        <h2 className="section-title">Research <span className="highlight-text">Mentors</span></h2>
-        <p className="section-subtitle">Experienced researchers from top institutions who guide and mentor Synthica's research community.</p>
-        <div className="team-grid">
-          {EXPERTISE_TEAM.map((m, i) => (
-            <motion.div key={i} className="team-member-card" {...fadeIn}>
-              <div className="member-image-placeholder">
-                <img src={m.img} alt={m.name} className="member-image"
-                  onError={e => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
-                <div className="member-initial" style={{ display:'none' }}>{m.name.charAt(0)}</div>
-              </div>
-              <h3 className="member-name">{m.name}</h3>
-              <p className="member-role">{m.role}</p>
-              {m.bio && <p className="member-bio">{m.bio}</p>}
-            </motion.div>
-          ))}
         </div>
       </div>
     </section>

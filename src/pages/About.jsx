@@ -71,7 +71,6 @@ const About = () => {
   const expertiseTeam = [
     { name: "Bach Nguyen", role: "Expertise Mentor", bio: "Researcher at Stanford University School of Medicine | Junior Fellow of Harvard Undergraduate Microbiology Society | Research Mentor at CSR-x", img: "32.png" },
     { name: "Arjun Dixit", role: "Expertise Mentor", bio: "Researcher at Georgia Institute of Technology, Emory University, Harvard University, and Stanford University School of Medicine | CEO and Founder of Nexflow", img: "33.png" },
-    { name: "Brandon Yee", role: "Expertise Mentor", bio: "Researcher at MIT Sloan School of Management Stanford University, and Duke University Nicholas School of the Environment | Co-Founder at Yee Collins Research Group", img: "34.png" },
     { name: "Linh (Livia) Tran", role: "Expertise Mentor", bio: "Research Assistant at the Well-being, Health, and Interpersonal Relationships Lab | Lab Manager & previously Undergraduate Research Assistant at ODESI Research Lab", img: "35.png" },
     { name: "Aaryan Senthilvanan", role: "Expertise Mentor", bio: "New York Times Editor | Research at Stanford University and California Institute of Technology | Founder @ SYALIS / BrainReach", img: "31.png" },
     { name: "Lyudong Yan", role: "Expertise Mentor", bio: "Research at Stanford University and California Institute of Technology | Intern @ University of Michigan | Paid Doctoral Intern", img: "36.png" },

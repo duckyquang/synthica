@@ -7,6 +7,9 @@ import Article from "./pages/Article";
 import Admin from "./pages/Admin";
 import EditorialBoard from "./pages/EditorialBoard";
 import Journal from "./pages/Journal";
+import ResearchGroup from "./pages/ResearchGroup";
+import SisterProgram from "./pages/SisterProgram";
+import FreeCourse from "./pages/FreeCourse";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
         <Route path="/work-with-us" element={<WorkWithUs />} />
         <Route path="/editorial-board" element={<EditorialBoard />} />
         <Route path="/journal" element={<Journal />} />
+        <Route path="/research-group" element={<ResearchGroup />} />
+        <Route path="/sister-program" element={<SisterProgram />} />
+        <Route path="/free-course" element={<FreeCourse />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

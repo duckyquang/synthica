@@ -42,8 +42,18 @@ const Navbar = () => {
             <li><Link to="/about#team">Our Team</Link></li>
           </ul>
         </li>
-        <li>
-          <a href="https://globalresearchchallenge.org" target="_blank" rel="noopener noreferrer">Competition</a>
+        <li
+          className={`nav-item-dropdown ${hoveredDropdown === 'programs' ? 'active' : ''}`}
+          onMouseEnter={() => handleMouseEnter('programs')}
+          onMouseLeave={handleMouseLeave}
+        >
+          <Link to="/research-group" className="nav-link-dropdown">Programs</Link>
+          <ul className="dropdown-menu">
+            <li><a href="https://globalresearchchallenge.org" target="_blank" rel="noopener noreferrer">Competition</a></li>
+            <li><Link to="/sister-program">SISTER Program</Link></li>
+            <li><Link to="/research-group">Research Group</Link></li>
+            <li><Link to="/free-course">Free Course</Link></li>
+          </ul>
         </li>
         <li
           className={`nav-item-dropdown ${hoveredDropdown === 'journal' ? 'active' : ''}`}
@@ -64,6 +74,7 @@ const Navbar = () => {
           <Link to="/work-with-us" className="nav-link-dropdown">Work with us</Link>
           <ul className="dropdown-menu">
             <li><Link to="/work-with-us#partnerships">Partnerships</Link></li>
+            <li><Link to="/work-with-us#sponsors">Sponsorships</Link></li>
           </ul>
         </li>
       </ul>
