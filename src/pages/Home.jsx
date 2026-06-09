@@ -170,7 +170,6 @@ const Home = () => {
           </div>
           <motion.img src="/assets/college-logo/harvard.png" alt="Harvard" className="floating-logo logo-1" {...fadeIn} />
           <motion.img src="/assets/college-logo/stanford.png" alt="Stanford" className="floating-logo logo-2" {...fadeIn} />
-          <motion.img src="/assets/college-logo/mit.png" alt="MIT" className="floating-logo logo-3" {...fadeIn} />
           <motion.img src="/assets/college-logo/duke.png" alt="Duke" className="floating-logo logo-4" {...fadeIn} />
         </div>
       </section>
