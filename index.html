@@ -125,40 +125,6 @@
                 competitions regardless of their levels.</p>
             <a href="https://discord.gg/8wPzZkGy5Z" target="_blank" class="hero-cta-btn">Join Us Now</a>
         </div>
-
-        <!-- College Scroller Section -->
-        <section class="colleges-section">
-            <h2 class="colleges-heading">Backed by researchers from</h2>
-            <div class="colleges-scroller">
-                <div class="colleges-track">
-                    <img src="src/colleges/2.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/3.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/5.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/6.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/7.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/8.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <!-- Duplicate for seamless loop -->
-                    <img src="src/colleges/2.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/3.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/5.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/6.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/7.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                    <img src="src/colleges/8.png"
-                        alt="Prestigious University Partner - Synthica Research Education Network" class="college-logo">
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- Features Section -->
@@ -293,11 +259,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Floating College Logos -->
-            <img src="src/college-logo/harvard.png" alt="Harvard" class="floating-logo logo-1">
-            <img src="src/college-logo/stanford.png" alt="Stanford" class="floating-logo logo-2">
-            <img src="src/college-logo/duke.png" alt="Duke" class="floating-logo logo-4">
         </div>
     </section>
 
@@ -587,35 +548,6 @@
 
             // Update text every 3 seconds
             setInterval(updateText, 3000);
-        }
-
-        // Floating Logo Animation on Scroll
-        const comparisonSection = document.querySelector('.comparison-section');
-        const floatingLogos = document.querySelectorAll('.floating-logo');
-        let hasAnimated = false;
-
-        const observerOptions = {
-            threshold: 0.3,
-            rootMargin: '0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !hasAnimated) {
-                    // Add animate class to each logo with a staggered delay
-                    floatingLogos.forEach((logo, index) => {
-                        setTimeout(() => {
-                            logo.classList.add('animate');
-                        }, index * 150);
-                    });
-                    hasAnimated = true;
-                    observer.unobserve(comparisonSection);
-                }
-            });
-        }, observerOptions);
-
-        if (comparisonSection) {
-            observer.observe(comparisonSection);
         }
 
         // FAQ Toggle Functionality

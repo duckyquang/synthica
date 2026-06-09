@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import Globe from '../components/Globe';
 import Meteors from '../components/Meteors';
 import RotatingText from '../components/RotatingText';
-import CollegesScroller from '../components/CollegesScroller';
 import FAQ from '../components/FAQ';
 
 const fadeIn = {
@@ -59,8 +58,6 @@ const Home = () => {
             <Globe />
           </div>
         </div>
-
-        <CollegesScroller />
       </div>
 
       <section className="features-platform">
@@ -168,9 +165,6 @@ const Home = () => {
               </ul>
             </motion.div>
           </div>
-          <motion.img src="/assets/college-logo/harvard.png" alt="Harvard" className="floating-logo logo-1" {...fadeIn} />
-          <motion.img src="/assets/college-logo/stanford.png" alt="Stanford" className="floating-logo logo-2" {...fadeIn} />
-          <motion.img src="/assets/college-logo/duke.png" alt="Duke" className="floating-logo logo-4" {...fadeIn} />
         </div>
       </section>
 

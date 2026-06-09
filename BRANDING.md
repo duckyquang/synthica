@@ -322,7 +322,6 @@ Icon sizing in cards: typically `28–40px` inside `.partnership-type-icon` or `
 
 | Component | Notes |
 |-----------|-------|
-| Colleges scroller | Heading: **“Backed by researchers from”** + looping university logos |
 | Rotating text | Gold (`.rotating-text`), cycles value props in platform title |
 | Globe hero (React) | `Home.jsx` — split layout with 3D globe, meteors |
 | Comparison section | Red “Scam Programs” vs. blue gradient “Synthica” with glowing yellow wordmark |
@@ -374,7 +373,6 @@ Journal HTML uses shared `styles.css` plus inline journal-specific rules:
 ## 9. Photography & Imagery
 
 - **Team photos:** Circular crops, `object-fit: cover`, often `object-position: top center` for editorial.
-- **College logos:** Grayscale or muted full-color in scroller; consistent height in track.
 - **Editorial photos:** Prefer professional headshots; fallback to initials on brand-blue gradient.
 - **No stock clutter:** Avoid generic “students with laptops” hero imagery; the sky gradient + globe carries the homepage.
 
