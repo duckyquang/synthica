@@ -1082,8 +1082,6 @@ body {
         #ffffff 100%);
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .navbar {
@@ -1277,14 +1275,15 @@ body {
 }
 
 .hero-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
     padding: 2rem;
-    position: relative;
+    text-align: center;
+    z-index: 1;
 }
 
 .hero-announcement-card {
