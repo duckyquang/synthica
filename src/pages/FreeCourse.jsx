@@ -36,7 +36,7 @@ const FreeCourse = () => (
         <div className="section-badge">Coming Soon</div>
         <h2 className="section-title">Learn how to do <span className="highlight-blue">research</span></h2>
         <p className="section-text">
-          Synthica is building a professor-reviewed curriculum designed for students with no prior experience. Every lesson will be free — no paywalls, no prerequisites — so anyone worldwide can learn how research actually works.
+          Synthica is building a researcher-reviewed curriculum designed for students with no prior experience. Every lesson will be free — no paywalls, no prerequisites — so anyone worldwide can learn how research actually works.
         </p>
 
         <div className="partnership-types-grid">

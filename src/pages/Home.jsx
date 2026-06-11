@@ -73,10 +73,10 @@ const Home = () => {
             <motion.div className="feature-card" {...fadeIn}>
               <div className="people-images-grid">
                 <img src="/assets/feature-card-1/pic-1.png" alt="Student" className="people-image" />
-                <img src="/assets/feature-card-1/pic-2.png" alt="Professor" className="people-image" />
+                <img src="/assets/feature-card-1/pic-2.png" alt="Researcher" className="people-image" />
                 <img src="/assets/feature-card-1/pic-3.png" alt="Researcher" className="people-image" />
               </div>
-              <p className="feature-description">Participate in our elite network of high school, university, and PhD students alongside professors.</p>
+              <p className="feature-description">Participate in our elite network of high school, university, and PhD students alongside researchers.</p>
             </motion.div>
 
             <motion.div className="feature-card" {...fadeIn}>
@@ -90,7 +90,7 @@ const Home = () => {
             </motion.div>
 
             <motion.div className="feature-card feature-card-with-preview" {...fadeIn}>
-              <p className="feature-card-description">Improve your research skills with our curriculum reviewed by top university professors.</p>
+              <p className="feature-card-description">Improve your research skills with our curriculum reviewed by top university researchers.</p>
               <div className="preview-card mini-preview curriculum-card">
                 <div className="curriculum-header">
                   <h3 className="curriculum-title">Synthica Curriculum</h3>

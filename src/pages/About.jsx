@@ -109,7 +109,7 @@ const About = () => {
             <div className="values-grid">
               {[
                 { num: '01', title: 'Accessibility', desc: 'Free, high-quality research education for all students, regardless of their financial situation or geographic location.' },
-                { num: '02', title: 'Excellence', desc: 'Curriculum reviewed by top university professors ensuring academic rigor and real-world relevance.' },
+                { num: '02', title: 'Excellence', desc: 'Curriculum reviewed by top university researchers ensuring academic rigor and real-world relevance.' },
                 { num: '03', title: 'Community', desc: 'Building a supportive global network of student researchers, mentors, and academic professionals.' },
                 { num: '04', title: 'Innovation', desc: 'Encouraging creative thinking and novel approaches to solving real-world problems through research.' }
               ].map((v, i) => (
