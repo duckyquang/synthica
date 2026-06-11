@@ -97,7 +97,7 @@ const About = () => {
               <div className="stats-container">
                 <img src="/assets/add-ons/Synthica Preview Image (5).png" alt="Synthica Impact" className="stats-person-image" />
                 <StatBubble number="50+" label="countries" className="stat-bubble-1" />
-                <StatBubble number="5000+" label="researchers" className="stat-bubble-2" />
+                <StatBubble number="1600+" label="researchers" className="stat-bubble-2" />
                 <StatBubble number="100+" label="projects" className="stat-bubble-3" />
                 <StatBubble number="25+" label="partners" className="stat-bubble-4" />
               </div>

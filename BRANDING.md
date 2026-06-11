@@ -384,7 +384,7 @@ Journal HTML uses shared `styles.css` plus inline journal-specific rules:
 
 - Lead with **accessibility** and **zero cost**
 - Use plain language: “learn how to do research,” not “leverage synergistic inquiry”
-- Emphasize **global community** (Discord, 93+ countries, 1000+ researchers)
+- Emphasize **global community** (Discord, 93+ countries, 1600+ researchers)
 - Name real institutions and programs when factual
 - Keep CTAs action-oriented: **Join Us Now**, **Get notified on Discord**, **Submit a Manuscript**
 

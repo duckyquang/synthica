@@ -85,7 +85,7 @@ const Home = () => {
             </motion.div>
 
             <motion.div className="feature-card" {...fadeIn}>
-              <div className="stat-number">5000+</div>
+              <div className="stat-number">1600+</div>
               <p className="feature-description">Researchers as members of Synthica worldwide</p>
             </motion.div>
 
